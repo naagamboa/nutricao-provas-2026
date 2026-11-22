@@ -1979,6 +1979,10 @@
     hoursEl.textContent = String(hours).padStart(2, "0");
     minEl.textContent = String(minutes).padStart(2, "0");
     secEl.textContent = String(seconds).padStart(2, "0");
+    if (diff <= 0) {
+      [daysEl, hoursEl, minEl, secEl].forEach((el) => { if (el) el.textContent = "—"; });
+      if (title) title.textContent = track.short + " · prova realizada";
+    }
     if (note) {
       if (diff <= 0) {
         note.textContent = "A data marcada já passou. Ajuste para acompanhar a contagem da próxima prova.";
