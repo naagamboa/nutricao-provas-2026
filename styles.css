@@ -1,5 +1,5 @@
 /* =========================================================
-   Bases da TÃ©cnica DietÃ©tica â€” caderno de estudos
+   Bases da Técnica Dietética — caderno de estudos
    Paleta: creme, verde-floresta, oliva, terracota, mostarda
    ========================================================= */
 
@@ -139,7 +139,7 @@ h4 { font-size: 1.05rem; }
 .skip-link:focus { top: 0; color: #fff; }
 .svg-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
 
-/* ------------------------- botÃµes ------------------------- */
+/* ------------------------- botões ------------------------- */
 .btn {
   --btn-bg: var(--green);
   --btn-fg: #fffdf8;
@@ -361,7 +361,7 @@ h4 { font-size: 1.05rem; }
 .note-inner strong { display: block; font-size: .9rem; margin-bottom: 2px; }
 .note-inner p { margin: 0; font-size: .82rem; color: var(--ink-soft); line-height: 1.55; }
 
-/* ------------------------- pÃ¡ginas ------------------------- */
+/* ------------------------- páginas ------------------------- */
 .page-wrap { padding-block: 46px 70px; }
 .page-head { max-width: 72ch; margin-bottom: 28px; }
 .page-head h1 { margin-bottom: 10px; }
@@ -471,7 +471,7 @@ h4 { font-size: 1.05rem; }
 .quick summary { cursor: pointer; padding: 13px 17px; font-size: .82rem; font-weight: 800; color: var(--terra); list-style: none; display: flex; align-items: center; gap: 8px; }
 .quick summary::-webkit-details-marker { display: none; }
 .quick summary::before { content: "+"; font-family: var(--display); font-size: 1.2rem; line-height: 1; }
-.quick[open] summary::before { content: "âˆ’"; }
+.quick[open] summary::before { content: "−"; }
 .quick .quick-body { padding: 0 17px 15px; font-size: .87rem; color: var(--ink-soft); }
 .quick .quick-body p:last-child { margin-bottom: 0; }
 
@@ -637,7 +637,7 @@ kbd { background: var(--surface-3); border: 1px solid var(--line-strong); border
 .legend-marked { box-shadow: inset 0 0 0 2px var(--mustard); }
 .legend-empty { background: var(--surface); }
 
-/* ------------------------- resumÃ£o ------------------------- */
+/* ------------------------- resumão ------------------------- */
 .summary-tabs { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--line); scrollbar-width: thin; }
 .summary-tab { background: none; border: 0; border-bottom: 2px solid transparent; padding: 10px 14px; color: var(--muted); font-size: .82rem; font-weight: 800; white-space: nowrap; }
 .summary-tab:hover { color: var(--ink); }
@@ -726,7 +726,7 @@ kbd { background: var(--surface-3); border: 1px solid var(--line-strong); border
 .material-copy span { display: block; margin-top: 3px; font-size: .76rem; color: var(--muted); line-height: 1.45; }
 .material-open svg { width: 18px; height: 18px; fill: none; stroke: var(--green); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
-/* ------------------------- glossÃ¡rio ------------------------- */
+/* ------------------------- glossário ------------------------- */
 .glossary-tools { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 22px; }
 .search-field { flex: 1; min-width: 260px; display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--line-strong); border-radius: 999px; padding: 4px 16px; }
 .search-field svg { width: 18px; height: 18px; flex-shrink: 0; fill: none; stroke: var(--muted); stroke-width: 2; stroke-linecap: round; }
