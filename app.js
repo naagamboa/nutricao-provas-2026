@@ -485,7 +485,6 @@
     closeSubjectGate();
     applySubjectToPage();
     navigate("inicio");
-    toast("Cadeira selecionada: " + track.name + ".");
   }
 
   function applySubjectToPage() {
