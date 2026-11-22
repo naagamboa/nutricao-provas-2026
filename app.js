@@ -566,7 +566,7 @@
     const materialsTitle = $("#materials-page-title");
     if (materialsTitle) materialsTitle.textContent = "Materiais · " + track.short;
     const materialsDesc = $("#materials-page-desc");
-    if (materialsDesc) materialsDesc.textContent = "Links oficiais e referências de " + track.name + ". Os itens gerais (calendário) aparecem em todas as cadeiras.";
+    if (materialsDesc) materialsDesc.textContent = "Arquivos da professora, links oficiais e referências de " + track.name + ". Os itens gerais (calendário) aparecem em todas as cadeiras.";
     const matModules = $("#materials-stat-modules");
     if (matModules) matModules.textContent = mods.length;
     const matLessons = $("#materials-stat-lessons");
