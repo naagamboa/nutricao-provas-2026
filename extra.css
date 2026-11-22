@@ -309,6 +309,9 @@ p, li, .lesson-content, .lesson-content p, .lesson-content li, .option, .feedbac
 .game-hud { font-size: 13px; white-space: nowrap; flex-shrink: 0; gap: 5px; padding: 5px 9px; }
 .game-hud .hud-level, .game-hud .hud-streak { white-space: nowrap; }
 .icon-btn { min-width: 40px; min-height: 40px; }
+.option .letter { font-size: 13px; }
+.palette button { font-size: 12px; }
+@media (max-width: 1400px) { .game-hud { display: none; } }
 @media (max-width: 900px) {
   .game-hud .hud-level { display: none; }
 }
