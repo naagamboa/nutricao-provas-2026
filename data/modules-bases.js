@@ -1,5 +1,446 @@
 window.NUT_MODULES = (window.NUT_MODULES || []).concat([
   {
+    id: "b4",
+    track: "bases",
+    title: "Cereais: estrutura, amido e cocção",
+    short: "Cereais",
+    icon: "i-wheat",
+    accent: "green",
+    blurb: "Estrutura do grão, classificação, amido (gelatinização, retrogradação, dextrinização), glúten e cocção de arroz, trigo, milho e aveia.",
+    lessons: [
+      {
+        id: "b4l1",
+        title: "Estrutura, classificação e composição dos cereais",
+        minutes: 8,
+        intro: "Entenda o grão por dentro: o que o refino retira, o que o parboilizado devolve e por que isso muda a nutrição e a cocção.",
+        content: `
+<p class="lead">Cereais são os grãos das gramíneas usados como base energética da alimentação: arroz, trigo, milho, aveia, cevada, centeio, sorgo e triticale. Quinoa, amaranto e trigo-sarraceno são <strong>pseudocereais</strong> — têm composição parecida, mas não são gramíneas.</p>
+
+<h3>Anatomia do grão</h3>
+<table>
+  <thead><tr><th>Parte</th><th>Proporção aproximada</th><th>O que contém</th><th>O que acontece no refino</th></tr></thead>
+  <tbody>
+    <tr><td>Pericarpo (farelo)</td><td>5–8%</td><td>Fibras, vitaminas do complexo B, minerais, compostos fenólicos</td><td>É removido: perde-se fibra e micronutrientes</td></tr>
+    <tr><td>Endosperma</td><td>80–85%</td><td>Amido (60–75%) e proteínas de reserva</td><td>Permanece: é a parte do grão polido</td></tr>
+    <tr><td>Gérmen</td><td>2–3%</td><td>Lipídios, vitamina E, vitaminas B, minerais, enzimas</td><td>É removido: o grão refinado fica mais estável, porém menos nutritivo</td></tr>
+  </tbody>
+</table>
+<p>O farelo e o gérmen concentram a maior parte dos micronutrientes. Por isso, quanto mais refinado o cereal, menor a densidade de fibras, vitaminas e minerais. No Brasil, farinhas de trigo e o arroz polido são <strong>fortificados com ferro e ácido fólico</strong> por determinação legal — isso compensa parte das perdas, mas não repõe a fibra.</p>
+
+<h3>Classificação que a prova cobra</h3>
+<ul>
+  <li><strong>Pelo grão:</strong> arroz, trigo, milho, aveia, cevada, centeio, sorgo.</li>
+  <li><strong>Pelo processamento:</strong> integral (farelo e gérmen preservados), polido/refinado (só endosperma), parboilizado (tratamento hidrotérmico antes do polimento).</li>
+  <li><strong>Pela forma:</strong> grão, farinha, flocos, semolina, farelo.</li>
+</ul>
+
+<h3>Integral, polido e parboilizado</h3>
+<table>
+  <thead><tr><th>Tipo de arroz</th><th>Processo</th><th>Nutrientes</th><th>Cocção e textura</th></tr></thead>
+  <tbody>
+    <tr><td>Integral</td><td>Descasca e mantém farelo e gérmen</td><td>Mais fibra, vitaminas, minerais e lipídios</td><td>Demora mais, absorve mais água, grão mais firme</td></tr>
+    <tr><td>Polido</td><td>Remove casca, farelo e gérmen</td><td>Predomina amido; é fortificado com ferro e folato</td><td>Cozinha rápido, textura solta</td></tr>
+    <tr><td>Parboilizado</td><td>Vapor sob pressão antes do polimento</td><td>Nutrientes do farelo migram para o endosperma; fica entre integral e polido</td><td>Grão mais firme e solto, menos pegajoso</td></tr>
+  </tbody>
+</table>
+<div class="callout exam"><strong>Cai na prova</strong><p>O parboilizado não é “integral”. O vapor empurra parte dos nutrientes do farelo para dentro do grão antes de o farelo ser removido. Ele é mais nutritivo que o polido e menos que o integral.</p></div>
+
+<h3>Proteínas, glúten e fatores antinutricionais</h3>
+<ul>
+  <li>As proteínas dos cereais são <strong>limitantes em lisina</strong>; a combinação com leguminosas (arroz + feijão) melhora o perfil de aminoácidos.</li>
+  <li><strong>Glúten:</strong> presente no trigo, centeio, cevada e derivados. Arroz, milho, aveia e pseudocereais não têm glúten — a aveia exige cuidado com contaminação cruzada.</li>
+  <li><strong>Fitato:</strong> no farelo, reduz a absorção de ferro, zinco e cálcio. Remolho, fermentação e cozimento reduzem o efeito.</li>
+  <li><strong>Lipídios do gérmen:</strong> oxidam com facilidade; por isso farinha integral e gérmen de trigo rançam mais rápido.</li>
+</ul>
+
+<div class="recap">
+  <h4>Em 30 segundos</h4>
+  <ul>
+    <li>Pericarpo = fibra e micronutrientes; endosperma = amido; gérmen = gordura e vitamina E.</li>
+    <li>Refino retira farelo e gérmen; integral preserva; parboilizado migra nutrientes antes de polir.</li>
+    <li>Cereais são limitantes em lisina; glúten só em trigo, centeio e cevada.</li>
+    <li>Fitato do farelo reduz absorção de minerais; remolho e fermentação ajudam.</li>
+  </ul>
+</div>
+
+<details class="quick">
+  <summary>Teste rápido: por que o arroz integral demora mais para cozinhar?</summary>
+  <div class="quick-body"><p>Porque o farelo e o gérmen formam uma barreira física à entrada de água e à gelatinização do amido do endosperma. Por isso ele precisa de mais água, mais tempo e, de preferência, remolho.</p></div>
+</details>
+`
+      },
+      {
+        id: "b4l2",
+        title: "Amido: gelatinização, retrogradação e dextrinização",
+        minutes: 10,
+        intro: "Os três nomes que decidem questões: gelatinização, retrogradação e dextrinização. Entenda o que o calor e o frio fazem com o amido.",
+        content: `
+<p class="lead">O amido é um polissacarídeo de glicose formado por dois polímeros: <strong>amilose</strong> (linear) e <strong>amilopectina</strong> (ramificada). A proporção entre eles explica a textura de molhos, pães, arroz e doces.</p>
+
+<h3>Amilose e amilopectina</h3>
+<table>
+  <thead><tr><th>Componente</th><th>Proporção típica</th><th>Comportamento</th></tr></thead>
+  <tbody>
+    <tr><td>Amilose</td><td>20–30%</td><td>Linear; forma géis firmes e tem maior tendência a retrogradar</td></tr>
+    <tr><td>Amilopectina</td><td>70–80%</td><td>Ramificada; dá viscosidade, clareza e menor retrogradação</td></tr>
+  </tbody>
+</table>
+<p>Arroz e milho têm mais amilose e tendem a ficar mais soltos; variedades com mais amilopectina ficam mais pegajosas e cremosas (arroz arbóreo, por exemplo).</p>
+
+<h3>Gelatinização</h3>
+<p>Com água e calor, os grânulos incham, absorvem água e perdem a organização cristalina. O grânulo rompe, o amido solubiliza e a mistura engrossa. A faixa geral fica em torno de <strong>60–80 °C</strong>, variando com a fonte:</p>
+<table>
+  <thead><tr><th>Fonte</th><th>Faixa aproximada de gelatinização</th><th>Uso típico</th></tr></thead>
+  <tbody>
+    <tr><td>Milho (maisena)</td><td>62–72 °C</td><td>Molhos, cremes, pudins</td></tr>
+    <tr><td>Trigo</td><td>58–64 °C</td><td>Roux, pães, massas</td></tr>
+    <tr><td>Arroz</td><td>68–78 °C</td><td>Cocção do grão, bolos</td></tr>
+    <tr><td>Batata</td><td>58–68 °C</td><td>Purês e sopas</td></tr>
+  </tbody>
+</table>
+<p><strong>O que atrasa a gelatinização:</strong> açúcar (compete pela água e eleva a temperatura necessária), gordura (dificulta a hidratação), ácido (hidrolisa o amido e reduz a viscosidade) e agitação excessiva. <strong>O que acelera:</strong> água em excesso, calor e granulometria fina.</p>
+
+<h3>Retrogradação</h3>
+<p>No resfriamento, as cadeias de amilose se reorganizam e formam zonas cristalinas: o gel endurece, fica opaco e libera água (<strong>sinérese</strong>). É o que acontece com o arroz na geladeira, com o pão que “endurece” e com o pudim que solta líquido.</p>
+<ul>
+  <li>A retrogradação é mais intensa em temperaturas de refrigeração (cerca de 4 °C).</li>
+  <li>O reaquecimento amolece parcialmente, mas não desfaz tudo — por isso o arroz requentado nunca fica igual.</li>
+  <li>Gorduras, emulsificantes e açúcares podem reduzir a retrogradação; é o princípio dos pães industriais macios.</li>
+</ul>
+
+<h3>Dextrinização</h3>
+<p>É a quebra do amido por <strong>calor seco</strong> (ou ácido), gerando dextrinas menores: o produto escurece, ganha sabor e perde capacidade de espessar. Exemplos: farinha torrada, crosta de pão, amido tostado em receitas e a coloração de bolos e torradas.</p>
+<div class="callout exam"><strong>Cai na prova</strong><p>Não confunda: <strong>gelatinização</strong> = amido + água + calor (engrossa). <strong>Retrogradação</strong> = resfriamento (endurece, sinérese). <strong>Dextrinização</strong> = calor seco (quebra, cor e aroma).</p></div>
+
+<h3>Espessantes na prática</h3>
+<ul>
+  <li><strong>Maisena (amido de milho):</strong> gel claro e brilhante; engrossa rápido; deve ser dissolvida em água fria antes (slurry) para não empelotar.</li>
+  <li><strong>Roux:</strong> farinha + gordura aquecidas; espessa e dá sabor; usado em molho branco.</li>
+  <li><strong>Amido de mandioca/polvilho:</strong> gel mais transparente e elástico; cuidado com excesso de aquecimento.</li>
+  <li><strong>Proporção guia:</strong> 1 colher de sopa de amido (~10 g) para 200–250 mL de líquido dá um molho médio (4–5%). Para creme mais consistente, 6–8%.</li>
+  <li><strong>Acidez:</strong> sucos e vinagre reduzem o poder espessante; por isso amidos modificados são usados em produtos ácidos.</li>
+</ul>
+
+<div class="recap">
+  <h4>Em 30 segundos</h4>
+  <ul>
+    <li>Amilose = gel firme e retrogradação; amilopectina = viscosidade e cremosidade.</li>
+    <li>Gelatinização: 60–80 °C com água; açúcar atrasa, ácido reduz a viscosidade.</li>
+    <li>Retrogradação: frio endurece e libera água; reaquecer só reverte em parte.</li>
+    <li>Dextrinização: calor seco quebra o amido, gera cor e sabor.</li>
+  </ul>
+</div>
+
+<details class="quick">
+  <summary>Teste rápido: por que o brigadeiro demora mais quando se coloca o açúcar junto?</summary>
+  <div class="quick-body"><p>Porque o açúcar compete pela água e eleva a temperatura de gelatinização do amido do leite condensado e do chocolate. Com menos água disponível para o amido, o ponto demora mais para chegar.</p></div>
+</details>
+`
+      },
+      {
+        id: "b4l3",
+        title: "Cocção e aplicações: arroz, trigo, milho e aveia",
+        minutes: 9,
+        intro: "Proporções, rendimento, glúten e os erros que aparecem em prova: lavar o arroz, sovar demais, cozinhar macarrão além do ponto.",
+        content: `
+<p class="lead">Cada cereal tem uma técnica própria porque a estrutura do grão e a proteína mudam. A prova gosta de proporção, rendimento e efeito do calor.</p>
+
+<h3>Arroz</h3>
+<ul>
+  <li><strong>Proporção:</strong> arroz branco 1 xícara de grão para 1,5–2 de água; integral, 1 para 2,5–3; parboilizado, 1 para 2.</li>
+  <li><strong>Rendimento:</strong> 1 xícara de arroz cru rende cerca de 2,5–3 xícaras cozidas, porque o grão hidrata e incha.</li>
+  <li><strong>Lavar:</strong> remove amido superficial e sujeira, deixando o grão mais solto. Para risoto, não se lava — o amido superficial é o que dá cremosidade.</li>
+  <li><strong>Refogar antes:</strong> sela o grão, reduz a perda de amido para a água e deixa o arroz mais solto.</li>
+  <li><strong>Descanso:</strong> 5 minutos tampado após o cozimento completa a hidratação e equaliza a textura.</li>
+  <li><strong>Tipos:</strong> agulhinha (solto), arbóreo/arborio (cremoso), basmati e jasmim (aromáticos), integral (fibra), parboilizado (firme).</li>
+</ul>
+
+<h3>Trigo e glúten</h3>
+<p>O glúten se forma quando a <strong>gliadina</strong> e a <strong>glutenina</strong> são hidratadas e trabalhadas mecanicamente. Ele é o esqueleto do pão:</p>
+<table>
+  <thead><tr><th>Ingrediente / ação</th><th>Efeito no glúten</th></tr></thead>
+  <tbody>
+    <tr><td>Água</td><td>Hidrata e permite a formação da rede</td></tr>
+    <tr><td>Sova</td><td>Alinha as proteínas e desenvolve elasticidade</td></tr>
+    <tr><td>Sal</td><td>Fortalece a rede e melhora o sabor</td></tr>
+    <tr><td>Gordura</td><td>Encurta a rede: deixa a massa mais macia e menos elástica</td></tr>
+    <tr><td>Açúcar</td><td>Amacia e alimenta o fermento; em excesso, atrasa a fermentação</td></tr>
+    <tr><td>Farinha integral</td><td>Absorve mais água e corta parte da rede; pão fica mais denso</td></tr>
+  </tbody>
+</table>
+<ul>
+  <li><strong>Farinha comum:</strong> versátil, para bolos e massas.</li>
+  <li><strong>Farinha integral:</strong> mais fibra, mais absorção de água, menor desenvolvimento do glúten.</li>
+  <li><strong>Semolina:</strong> granulometria grossa, usada em massas e cuscuz.</li>
+  <li><strong>Macarrão:</strong> cozinhar em água abundante e fervente; não lavar depois, porque remove o amido que ajuda o molho a aderir. O ponto <em>al dente</em> preserva textura.</li>
+  <li><strong>Pão:</strong> fermento produz CO₂, o glúten retém o gás; o forno promove expansão, fixação da estrutura e Maillard na casca.</li>
+</ul>
+
+<h3>Milho e aveia</h3>
+<ul>
+  <li><strong>Milho:</strong> consumido como grão, fubá, flocos, canjica, polenta e amido. A <strong>nixtamalização</strong> (cozinhar com cal) libera a niacina e previne pelagra — técnica tradicional das tortilhas mexicanas.</li>
+  <li><strong>Canjica/cuscuz:</strong> exigem remolho e cocção longa; o cuscuz de milho cozinha no vapor.</li>
+  <li><strong>Aveia:</strong> flocos, farelo e farinha. É rica em <strong>beta-glucana</strong>, fibra solúvel que aumenta a viscosidade e ajuda a reduzir o colesterol. Não contém glúten, mas pode haver contaminação cruzada no processamento.</li>
+  <li><strong>Aveia em pó:</strong> não substitui farinha de trigo em pão, porque não forma rede de glúten.</li>
+</ul>
+
+<div class="callout exam"><strong>Cai na prova</strong><p>Lavar o arroz remove amido superficial e deixa o grão mais solto, mas não “elimina carboidrato”. O arroz continua sendo fonte de amido. Já no risoto, não se lava justamente para preservar o amido que dá cremosidade.</p></div>
+
+<h3>Tabela de cocção</h3>
+<table>
+  <thead><tr><th>Preparação</th><th>Água / proporção</th><th>Tempo aproximado</th><th>Rendimento</th></tr></thead>
+  <tbody>
+    <tr><td>Arroz branco</td><td>1 : 2</td><td>15–20 min</td><td>2,5–3×</td></tr>
+    <tr><td>Arroz integral</td><td>1 : 2,5–3</td><td>35–45 min</td><td>2,5–3×</td></tr>
+    <tr><td>Macarrão</td><td>Água abundante</td><td>8–12 min</td><td>2–2,5×</td></tr>
+    <tr><td>Aveia em flocos</td><td>1 : 2–3</td><td>5–10 min</td><td>2–3×</td></tr>
+    <tr><td>Cuscuz de milho</td><td>Hidratar e cozinhar no vapor</td><td>15–20 min</td><td>2–2,5×</td></tr>
+  </tbody>
+</table>
+
+<div class="recap">
+  <h4>Em 30 segundos</h4>
+  <ul>
+    <li>Arroz branco 1:2; integral 1:2,5–3; rendimento ~2,5–3×.</li>
+    <li>Glúten = gliadina + glutenina + água + sova; gordura amacia, sal fortalece.</li>
+    <li>Não lavar o macarrão: o amido superficial ajuda o molho a aderir.</li>
+    <li>Nixtamalização do milho libera niacina; aveia tem beta-glucana e não tem glúten.</li>
+  </ul>
+</div>
+
+<details class="quick">
+  <summary>Teste rápido: por que a farinha integral deixa o pão mais denso?</summary>
+  <div class="quick-body"><p>Porque o farelo interrompe fisicamente a rede de glúten e absorve mais água. Menos rede contínua significa menos retenção de gás e migalhas mais compactas.</p></div>
+</details>
+`
+      }
+    ]
+  },
+  {
+    id: "b5",
+    track: "bases",
+    title: "Açúcares e edulcorantes: tecnologia e uso",
+    short: "Açúcares e edulcorantes",
+    icon: "i-sugar",
+    accent: "green",
+    blurb: "Tipos de açúcar, poder adoçante, higroscopicidade, funções na conservação e na textura, caramelização, cristalização e edulcorantes naturais e artificiais.",
+    lessons: [
+      {
+        id: "b5l1",
+        title: "Açúcares: definição, tipos e propriedades",
+        minutes: 9,
+        intro: "Sacarose, glicose, frutose, lactose e maltose: o que muda no sabor, na solubilidade e no comportamento na cozinha.",
+        content: `
+<p class="lead">Açúcares são carboidratos simples, solúveis em água e de sabor doce. Na técnica dietética, o que importa não é só o sabor: solubilidade, higroscopicidade, poder adoçante e capacidade de cristalizar mudam a textura de doces, pães e bebidas.</p>
+
+<h3>Os principais açúcares</h3>
+<table>
+  <thead><tr><th>Nome</th><th>Tipo</th><th>Onde aparece</th><th>Observação</th></tr></thead>
+  <tbody>
+    <tr><td>Glicose</td><td>Monossacarídeo</td><td>Mel, frutas, xarope de glicose</td><td>Menos doce que a sacarose; fonte rápida de energia</td></tr>
+    <tr><td>Frutose</td><td>Monossacarídeo</td><td>Frutas, mel, xarope de milho</td><td>Mais doce; muito higroscópica</td></tr>
+    <tr><td>Sacarose</td><td>Dissacarídeo (glicose + frutose)</td><td>Cana, beterraba, açúcar de mesa</td><td>Referência de poder adoçante = 100</td></tr>
+    <tr><td>Lactose</td><td>Dissacarídeo (glicose + galactose)</td><td>Leite e derivados</td><td>Pouco doce; causa desconforto em intolerantes</td></tr>
+    <tr><td>Maltose</td><td>Dissacarídeo (glicose + glicose)</td><td>Malte, cereais germinados</td><td>Poder adoçante baixo</td></tr>
+  </tbody>
+</table>
+
+<h3>De onde vem o açúcar de mesa</h3>
+<p>No Brasil, vem principalmente da cana; em outras regiões, da beterraba. O processo resume-se a: moagem → clarificação → evaporação → cristalização → centrifugação → secagem. O <strong>refino</strong> é uma etapa extra de purificação que remove cor e impurezas.</p>
+
+<h3>Tipos de açúcar e o que muda</h3>
+<table>
+  <thead><tr><th>Tipo</th><th>Processamento</th><th>Cor / textura</th><th>Uso</th></tr></thead>
+  <tbody>
+    <tr><td>Refinado</td><td>Máxima purificação</td><td>Branco, fino</td><td>Bolos, doces, bebidas</td></tr>
+    <tr><td>Cristal</td><td>Menos refino</td><td>Branco, cristais maiores</td><td>Uso geral, caldas</td></tr>
+    <tr><td>Demerara</td><td>Refino leve</td><td>Dourado, cristais grossos</td><td>Coberturas, café</td></tr>
+    <tr><td>Mascavo</td><td>Caldo de cana evaporado, sem refino</td><td>Marrom, úmido, aroma de melaço</td><td>Bolos, doces</td></tr>
+    <tr><td>Rapadura / açúcar de coco</td><td>Caldo concentrado / seiva de coco</td><td>Bloco / marrom</td><td>Doces típicos</td></tr>
+  </tbody>
+</table>
+<p><strong>Cuidado com o marketing:</strong> mascavo, demerara, rapadura e açúcar de coco têm mais minerais, mas em quantidade irrelevante no consumo habitual. Continuam sendo açúcar e devem ser moderados. “Light” significa redução mínima de 25% de energia ou de um nutriente em relação ao produto convencional — não é sinônimo de baixa caloria.</p>
+
+<h3>Propriedades que decidem a receita</h3>
+<ul>
+  <li><strong>Solubilidade:</strong> frutose &gt; sacarose &gt; glicose &gt; maltose &gt; lactose. A solubilidade aumenta com o calor.</li>
+  <li><strong>Poder adoçante (sacarose = 100):</strong> frutose 120–170; açúcar invertido ~120; glicose 70–80; maltose 30–40; lactose 20–30. Percepção varia com temperatura, pH e presença de outros sabores.</li>
+  <li><strong>Higroscopicidade:</strong> frutose e açúcar invertido atraem água; por isso balas e bolos ficam úmidos e geleias podem “suar”.</li>
+  <li><strong>Umectância:</strong> retêm água e prolongam a maciez de bolos e pães.</li>
+  <li><strong>Cristalização:</strong> a sacarose cristaliza com facilidade; glicose, invertido e ácidos interferem e reduzem a cristalização.</li>
+  <li><strong>Caramelização:</strong> aquecimento do açúcar sem proteínas, acima de ~160–180 °C, gera cor âmbar e sabor amargo.</li>
+</ul>
+
+<h3>Açúcar invertido e xarope de glicose</h3>
+<p>O <strong>açúcar invertido</strong> é a sacarose hidrolisada em glicose + frutose (por ácido ou enzima). Ele é mais doce, mais higroscópico e <strong>dificulta a cristalização</strong> — por isso é usado em sorvetes, geleias e doces. O <strong>xarope de glicose</strong> (glicose + maltose) também controla cristalização e dá corpo a doces e bebidas.</p>
+<div class="callout exam"><strong>Cai na prova</strong><p>Caramelização ≠ Maillard. Caramelização é só açúcar + calor. Maillard precisa de <strong>açúcar redutor + aminoácido/proteína</strong> e ocorre em superfície seca, geralmente acima de 140–150 °C.</p></div>
+
+<div class="recap">
+  <h4>Em 30 segundos</h4>
+  <ul>
+    <li>Sacarose = glicose + frutose; referência de doçura 100.</li>
+    <li>Frutose é mais doce e mais higroscópica; lactose é pouco doce.</li>
+    <li>Refino remove cor e minerais; mascavo não é “livre de açúcar”.</li>
+    <li>Açúcar invertido e xarope de glicose reduzem cristalização e retêm água.</li>
+  </ul>
+</div>
+
+<details class="quick">
+  <summary>Teste rápido: por que o sorvete caseiro fica mais macio com açúcar?</summary>
+  <div class="quick-body"><p>Porque o açúcar abaixa o ponto de congelamento da água e interfere na formação de cristais de gelo. Menos cristais grandes = textura mais macia e cremosa.</p></div>
+</details>
+`
+      },
+      {
+        id: "b5l2",
+        title: "Funções do açúcar na técnica dietética",
+        minutes: 9,
+        intro: "Açúcar não é só sabor: conserva, fermenta, dá estrutura, cor e ponto. Veja onde ele é insubstituível.",
+        content: `
+<p class="lead">O açúcar tem funções tecnológicas que vão muito além do gosto doce. Retirar ou substituir açúcar de uma receita muda conservação, textura, volume, cor e vida de prateleira.</p>
+
+<h3>As seis funções principais</h3>
+<table>
+  <thead><tr><th>Função</th><th>Como acontece</th><th>Exemplo</th></tr></thead>
+  <tbody>
+    <tr><td>Adoçar</td><td>Ativa receptores de doce; interage com acidez e aroma</td><td>Bebidas, sobremesas</td></tr>
+    <tr><td>Conservar</td><td>Reduz a atividade de água e a disponibilidade de água para microrganismos</td><td>Geleias, compotas, doces em massa</td></tr>
+    <tr><td>Fermentar</td><td>Serve de substrato para leveduras, que produzem CO₂ e álcool</td><td>Pães, bebidas fermentadas</td></tr>
+    <tr><td>Estruturar</td><td>Interfere na cristalização, na rede de glúten e na coagulação de proteínas</td><td>Bolos, merengues, doces de confeitaria</td></tr>
+    <tr><td>Cor e aroma</td><td>Caramelização e Maillard</td><td>Caramelo, crosta de pão, bolos</td></tr>
+    <tr><td>Textura e conservação da maciez</td><td>Higroscopicidade e umectância</td><td>Bolos que “duram” macios</td></tr>
+  </tbody>
+</table>
+
+<h3>Conservação: atividade de água</h3>
+<p>Geleias e compotas duram porque o açúcar se dissolve e “prende” a água, reduzindo a atividade de água (<em>a</em><sub>w</sub>). Menos água disponível = menos crescimento microbiano. Por isso <strong>não se substitui açúcar por edulcorante em geleia</strong>: o edulcorante adoça, mas não conserva nem forma gel.</p>
+<p>Para gelificar, a geleia precisa de três pilares: <strong>pectina + ácido + açúcar</strong>. Sem açúcar suficiente, não há gel nem conservação adequada.</p>
+
+<h3>Fermentação</h3>
+<p>Leveduras consomem açúcares e produzem CO₂ (gás que infla a massa) e etanol. Em pães, uma pequena quantidade de açúcar acelera a fermentação; em excesso, a pressão osmótica desidrata as leveduras e <strong>atrasa</strong> o crescimento. Em massas muito doces, usa-se fermento em maior quantidade ou fermentação mais longa.</p>
+
+<h3>Cristalização e pontos de calda</h3>
+<p>A cristalização é a organização ordenada da sacarose. Em doces, ela pode ser desejada (fondant, brigadeiro de corte) ou indesejada (caldas e geleias com cristais). Para controlar:</p>
+<ul>
+  <li>Adicionar glicose, açúcar invertido ou gotas de ácido reduz a cristalização.</li>
+  <li>Evitar mexer a calda depois de iniciada a fervura: cristais nas paredes servem de núcleo.</li>
+  <li>Lavar as paredes da panela com pincel úmido dissolve cristais.</li>
+  <li>Impedir a entrada de impurezas e de grãos de açúcar.</li>
+</ul>
+<table>
+  <thead><tr><th>Ponto</th><th>Temperatura aproximada</th><th>Teste</th><th>Uso</th></tr></thead>
+  <tbody>
+    <tr><td>Fio</td><td>104–110 °C</td><td>Calda escorre em fio</td><td>Compotas, caldas leves</td></tr>
+    <tr><td>Bola mole</td><td>112–116 °C</td><td>Forma bola que cede ao toque</td><td>Doces moles, marshmallow</td></tr>
+    <tr><td>Bola dura</td><td>118–122 °C</td><td>Bola firme</td><td>Doces de corte, nougat</td></tr>
+    <tr><td>Quebradiço</td><td>145–155 °C</td><td>Endurece e quebra</td><td>Praliné, crocante</td></tr>
+    <tr><td>Caramelo</td><td>160–180 °C</td><td>Cor âmbar e aroma</td><td>Caramelo, flan</td></tr>
+  </tbody>
+</table>
+
+<h3>Açúcar e outros ingredientes</h3>
+<ul>
+  <li><strong>Amido:</strong> o açúcar compete pela água e atrasa a gelatinização — o molho e o brigadeiro demoram mais para engrossar.</li>
+  <li><strong>Claras:</strong> o açúcar estabiliza a espuma e aumenta a viscosidade; adicionado aos poucos, dá merengue mais firme e brilhante.</li>
+  <li><strong>Ovos:</strong> o açúcar retarda a coagulação das proteínas, deixando cremes mais lisos.</li>
+  <li><strong>Congelamento:</strong> abaixa o ponto de congelamento e reduz cristais de gelo em sorvetes.</li>
+  <li><strong>Glúten:</strong> amacia a rede e torna o miolo mais macio; em excesso, enfraquece a estrutura.</li>
+</ul>
+
+<h3>Consumo e rotulagem</h3>
+<p>A OMS recomenda que os açúcares livres fiquem abaixo de <strong>10% do valor energético total</strong>, com benefício adicional abaixo de 5%. A rotulagem nutricional brasileira alerta com a lupa “alto em açúcar adicionado” quando o produto tem <strong>≥ 15 g/100 g</strong> (sólidos) ou <strong>≥ 7,5 g/100 mL</strong> (líquidos).</p>
+<div class="callout exam"><strong>Cai na prova</strong><p>“Diet” não significa sem calorias: um produto diet pode ter mais gordura. “Zero” e “light” têm definições próprias. E edulcorante não substitui açúcar em geleia, merengue ou caramelo, porque não dá corpo, não conserva e não carameliza.</p></div>
+
+<div class="recap">
+  <h4>Em 30 segundos</h4>
+  <ul>
+    <li>Açúcar conserva ao reduzir a atividade de água.</li>
+    <li>Fermentação precisa de açúcar, mas excesso atrasa a levedura.</li>
+    <li>Glicose/invertido controlam cristalização; mexer a calda cristaliza.</li>
+    <li>Em geleia, edulcorante não substitui açúcar; em merengue, estabiliza a espuma.</li>
+  </ul>
+</div>
+
+<details class="quick">
+  <summary>Teste rápido: por que a calda cristaliza quando se mexe depois de ferver?</summary>
+  <div class="quick-body"><p>Porque mexer favorece a colisão entre moléculas de sacarose e a formação de núcleos de cristal. O ideal é mexer só até dissolver o açúcar, antes da fervura.</p></div>
+</details>
+`
+      },
+      {
+        id: "b5l3",
+        title: "Edulcorantes: naturais, artificiais e uso seguro",
+        minutes: 8,
+        intro: "Stevia, aspartame, sucralose, sacarina, polióis: o que são, quanto adoçam, o que não fazem e onde a prova costuma confundir.",
+        content: `
+<p class="lead">Edulcorantes são substâncias que conferem sabor doce. Podem ser naturais ou artificiais, calóricos ou não. Eles substituem o <strong>gosto</strong> do açúcar, mas não necessariamente suas funções tecnológicas.</p>
+
+<h3>Classificação</h3>
+<table>
+  <thead><tr><th>Grupo</th><th>Exemplos</th><th>Poder adoçante (sacarose = 100)</th><th>Observações</th></tr></thead>
+  <tbody>
+    <tr><td>Naturais não calóricos</td><td>Stevia (esteviol glicosídeos)</td><td>200–300</td><td>Retrogosto amargo/licoroso; estável ao calor</td></tr>
+    <tr><td>Naturais proteicos</td><td>Taumatina, brazzeína</td><td>2.000–3.000</td><td>Proteínas doces; uso limitado por custo</td></tr>
+    <tr><td>Naturais de fruta</td><td>Monk fruit (mogrosídeos)</td><td>150–300</td><td>Sabor mais próximo do açúcar; estável</td></tr>
+    <tr><td>Polióis</td><td>Sorbitol, manitol, xilitol, maltitol, eritritol</td><td>30–100</td><td>Menos calorias; efeito laxativo em excesso; xilitol anticariogênico</td></tr>
+    <tr><td>Artificiais</td><td>Sacarina, aspartame, ciclamato, sucralose, acessulfame K</td><td>30–600</td><td>Potência e estabilidade variam; alguns com retrogosto</td></tr>
+  </tbody>
+</table>
+
+<h3>Os artificiais, um por um</h3>
+<ul>
+  <li><strong>Sacarina:</strong> ~300× mais doce; retrogosto metálico/amargo; muito usada em adoçantes de mesa e refrigerantes.</li>
+  <li><strong>Aspartame:</strong> ~180–200×; contém fenilalanina (aviso obrigatório para fenilcetonúricos); <strong>não é estável ao calor</strong>, por isso não é ideal para forno.</li>
+  <li><strong>Sucralose:</strong> ~600×; estável ao calor; sabor próximo do açúcar; muito usada em bebidas e produtos de confeitaria.</li>
+  <li><strong>Acessulfame K:</strong> ~200×; estável ao calor; frequentemente combinado com aspartame ou sucralose para melhorar o perfil de sabor.</li>
+  <li><strong>Ciclamato:</strong> ~30–50×; permitido no Brasil e em vários países, mas proibido nos EUA desde 1970; costuma ser combinado com sacarina.</li>
+</ul>
+
+<h3>Polióis: os “açúcares álcool”</h3>
+<p>São carboidratos hidrogenados com menor valor calórico (cerca de 1,6–2,4 kcal/g; eritritol ~0,2 kcal/g) e menor impacto na glicemia. Em excesso, puxam água para o intestino e causam <strong>efeito laxativo</strong> — o eritritol é o que menos provoca. O xilitol reduz o risco de cárie, por isso aparece em chicletes e pastilhas.</p>
+
+<h3>Segurança e rotulagem</h3>
+<ul>
+  <li>A ANVISA autoriza e define limites de uso; a <strong>IDA</strong> (ingestão diária aceitável) é a quantidade que pode ser consumida diariamente ao longo da vida sem risco apreciável.</li>
+  <li>Edulcorantes devem constar na lista de ingredientes; produtos com polióis podem alertar sobre efeito laxativo.</li>
+  <li><strong>“Diet”:</strong> ausência de açúcar (mas pode conter gordura e calorias).</li>
+  <li><strong>“Zero”:</strong> sem adição de açúcar ou sem determinado componente, conforme o regulamento.</li>
+  <li><strong>“Light”:</strong> redução mínima de 25% de energia ou de um nutriente em relação ao produto de referência.</li>
+</ul>
+
+<h3>Por que edulcorante não substitui açúcar em tudo</h3>
+<table>
+  <thead><tr><th>Função do açúcar</th><th>O edulcorante faz?</th><th>Consequência</th></tr></thead>
+  <tbody>
+    <tr><td>Adoçar</td><td>Sim</td><td>Pode haver retrogosto e diferença de perfil</td></tr>
+    <tr><td>Dar corpo/volume</td><td>Não (exceto polióis)</td><td>Bolo murcho, textura seca</td></tr>
+    <tr><td>Conservar por reduzir a<sub>w</sub></td><td>Não</td><td>Geleia e compota não podem ser só com edulcorante</td></tr>
+    <tr><td>Caramelizar</td><td>Não</td><td>Sem cor e sabor de caramelo</td></tr>
+    <tr><td>Alimentar leveduras</td><td>Não</td><td>Fermentação comprometida</td></tr>
+    <tr><td>Cristalizar/estruturar</td><td>Parcial (polióis)</td><td>Textura diferente</td></tr>
+  </tbody>
+</table>
+<div class="callout exam"><strong>Cai na prova</strong><p>Aspartame não é estável ao calor e tem fenilalanina. Sucralose e acessulfame K são estáveis. Stevia é natural, mas não é “livre de química”. Polióis têm menos calorias, mas efeito laxativo. E “diet” não é sinônimo de “sem calorias”.</p></div>
+
+<div class="recap">
+  <h4>Em 30 segundos</h4>
+  <ul>
+    <li>Sacarose = 100 de referência; sucralose ~600; sacarina ~300; aspartame ~200; ciclamato ~30–50.</li>
+    <li>Aspartame: não vai ao forno e tem aviso para fenilcetonúricos.</li>
+    <li>Polióis reduzem calorias e glicemia, mas causam efeito laxativo.</li>
+    <li>Edulcorante adoça, mas não conserva, não carameliza e não dá volume.</li>
+  </ul>
+</div>
+
+<details class="quick">
+  <summary>Teste rápido: posso fazer geleia só com edulcorante?</summary>
+  <div class="quick-body"><p>Não com segurança. Sem açúcar em quantidade suficiente, a atividade de água fica alta, o gel de pectina não se forma adequadamente e o produto se torna vulnerável a microrganismos. Edulcorante não substitui a função conservante do açúcar.</p></div>
+</details>
+`
+      }
+    ]
+  },
+  {
     id: "b1",
     track: "bases",
     title: "Ovos: estrutura, cocção e segurança",

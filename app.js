@@ -42,12 +42,12 @@
       label: "Bases da Técnica Dietética", exam: "Prova Teórica 3 · 24/11 · 17h30",
       eyebrow: "Bases da Técnica Dietética · P3 · 24/11 · 17h30",
       title: "Bases da <em>Técnica Dietética</em>",
-      note: "ovos, gorduras e carnes",
-      lead: "Foque no módulo 3 da prova teórica: ovos, óleos e gorduras, carnes. Estrutura, transformações, cocção, qualidade e segurança — sem a prova prática.",
+      note: "cereais, açúcares, ovos, gorduras e carnes",
+      lead: "Foque na Prova 3: cereais (págs. 23–31 e 59–66), açúcares e edulcorantes (págs. 2–27 e 32–39), ovos, óleos e gorduras e carnes. Estrutura, transformações, cocção, qualidade e segurança — sem a prova prática.",
       strategy: [
         "Para cada técnica, pergunte: o que o calor, a água e a gordura fazem com essa estrutura?",
-        "Decore as temperaturas e os pontos de fumaça; são questões rápidas e frequentes.",
-        "Compare cortes duros x macios, coagulação x emulsão e fritura x rancidez."
+        "Domine os três processos do amido (gelatinização, retrogradação e dextrinização) e as funções do açúcar.",
+        "Decore as temperaturas e os pontos de fumaça; são questões rápidas e frequentes."
       ]
     },
     {
@@ -510,6 +510,8 @@
       start.dataset.lesson = first.lesson.id;
       start.innerHTML = "Começar por " + esc(track.short) + " " + svg("i-arrow");
     }
+    const emptyStart = $("#lesson-empty [data-lesson]");
+    if (emptyStart && first) emptyStart.dataset.lesson = first.lesson.id;
     const heroExam = $("#hero-exam");
     if (heroExam) heroExam.innerHTML = svg("i-trophy") + " Simulado de " + esc(track.short);
 

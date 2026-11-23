@@ -103,7 +103,24 @@ window.NUT_GLOSSARY = [
   { term: "Extensão universitária", module: "s4", definition: "Ação que articula universidade e comunidade por meio de escuta, diagnóstico, construção conjunta, intervenção e devolutiva." },
   { term: "Service Learning", module: "s4", definition: "Aprendizagem-serviço: articula formação acadêmica e serviço à comunidade, com problema real, parceria e reflexão crítica." },
   { term: "Assistencialismo", module: "s4", definition: "Ação unilateral que impõe solução pronta e tende a criar dependência, sem participação ou fortalecimento da autonomia." },
-  { term: "Vigilância alimentar e nutricional", module: "s4", definition: "Monitoramento contínuo do estado nutricional e do consumo para orientar políticas, ações e cuidado." }
+  { term: "Vigilância alimentar e nutricional", module: "s4", definition: "Monitoramento contínuo do estado nutricional e do consumo para orientar políticas, ações e cuidado." },
+  { term: "Amilose", module: "b4", definition: "Polímero linear de glicose do amido (20–30%). Forma géis firmes e retrograda com mais facilidade; predomina em arrozes mais soltos." },
+  { term: "Amilopectina", module: "b4", definition: "Polímero ramificado de glicose do amido (70–80%). Dá viscosidade e cremosidade e retrograda menos que a amilose." },
+  { term: "Gelatinização", module: "b4", definition: "Absorção de água e inchaço dos grânulos de amido com calor (cerca de 60–80 °C), com rompimento e espessamento da mistura. Açúcar e gordura atrasam." },
+  { term: "Retrogradação", module: "b4", definition: "Reorganização das cadeias de amilose no resfriamento, endurecendo o gel e liberando água (sinérese). Explica o arroz duro na geladeira e o pão que envelhece." },
+  { term: "Sinérese", module: "b4", definition: "Separação de líquido de um gel por retrogradação ou contração da rede. Aparece em pudins, geleias e arroz requentado." },
+  { term: "Dextrinização", module: "b4", definition: "Quebra do amido por calor seco ou ácido, formando dextrinas. Gera cor e sabor e reduz o poder espessante (farinha torrada, crosta de pão)." },
+  { term: "Glúten", module: "b4", definition: "Rede proteica formada por gliadina e glutenina com água e trabalho mecânico. Presente em trigo, centeio e cevada; dá elasticidade a pães e massas." },
+  { term: "Parboilização", module: "b4", definition: "Tratamento do arroz com vapor sob pressão antes do polimento. Nutrientes do farelo migram para o endosperma, resultando em grão mais nutritivo que o polido e mais firme." },
+  { term: "Nixtamalização", module: "b4", definition: "Cocção do milho com cal (hidróxido de cálcio), que libera a niacina e reduz o risco de pelagra. Técnica tradicional das tortilhas mexicanas." },
+  { term: "Beta-glucana", module: "b4", definition: "Fibra solúvel presente na aveia e na cevada. Aumenta a viscosidade do conteúdo intestinal e auxilia na redução do colesterol." },
+  { term: "Açúcar invertido", module: "b5", definition: "Sacarose hidrolisada em glicose + frutose. É mais doce e mais higroscópico e dificulta a cristalização; usado em sorvetes, geleias e doces." },
+  { term: "Higroscopicidade", module: "b5", definition: "Capacidade de atrair e reter água do ambiente. Frutose e açúcar invertido são muito higroscópicos; por isso mantêm doces úmidos e podem “suar”." },
+  { term: "Poder adoçante", module: "b5", definition: "Doçura relativa à sacarose (100). Frutose 120–170; glicose 70–80; maltose 30–40; lactose 20–30; sucralose ~600; aspartame ~200; sacarina ~300." },
+  { term: "Edulcorante", module: "b5", definition: "Substância que confere sabor doce, natural ou artificial, calórica ou não. Adoça, mas nem sempre substitui funções do açúcar como conservar, dar corpo ou caramelizar." },
+  { term: "Poliol", module: "b5", definition: "Açúcar-álcool (sorbitol, xilitol, maltitol, eritritol) com menos calorias e menor impacto glicêmico. Em excesso, causa efeito laxativo; xilitol é anticariogênico." },
+  { term: "IDA (edulcorantes)", module: "b5", definition: "Ingestão Diária Aceitável: quantidade de edulcorante que pode ser consumida diariamente ao longo da vida sem risco apreciável, com margem de segurança." },
+  { term: "Ponto de calda", module: "b5", definition: "Estágio de concentração do açúcar por temperatura: fio 104–110 °C; bola mole 112–116 °C; bola dura 118–122 °C; quebradiço 145–155 °C; caramelo 160–180 °C." }
 ];
 
 window.NUT_PLAN = [
@@ -201,20 +218,24 @@ window.NUT_PLAN = [
     ]
   },
   {
-    id: "d11", track: "bases", day: "Domingo", date: "22/11", title: "Bases: revisão e erros",
-    focus: "Corrija o simulado e releia os pontos fracos.",
+    id: "d11", track: "bases", day: "Domingo", date: "22/11", title: "Bases: cereais (novo na P3)",
+    focus: "Estrutura do grão, amido (gelatinização, retrogradação, dextrinização), glúten e cocção. O professor incluiu cereais na prova 3.",
     tasks: [
-      { id: "d11t1", text: "Revisar erros do simulado de Bases.", view: "simulado" },
-      { id: "d11t2", text: "Ler o Resumão de ovos, gorduras e carnes.", view: "resumo" }
+      { id: "d11t1", text: "Ler as 3 aulas do módulo de cereais.", view: "aprender", lesson: "b4l1" },
+      { id: "d11t2", text: "Fazer os flashcards de cereais.", view: "flashcards" },
+      { id: "d11t3", text: "Responder 10 questões de cereais.", view: "questoes" },
+      { id: "d11t4", text: "Ler o Resumão de cereais e amido.", view: "resumo" }
     ]
   },
   {
-    id: "d12", track: "bases", day: "Segunda", date: "23/11", title: "Bases: véspera",
-    focus: "Revisão leve, sem conteúdo novo. Confira temperaturas e pontos de fumaça.",
+    id: "d12", track: "bases", day: "Segunda", date: "23/11", title: "Bases: açúcares e edulcorantes",
+    focus: "Conteúdo novo da P3: tipos de açúcar, funções tecnológicas, caramelização, cristalização e edulcorantes. Depois, revisão final.",
     tasks: [
-      { id: "d12t1", text: "Refazer o simulado de Bases.", view: "simulado" },
-      { id: "d12t2", text: "Ler o Resumão de Bases e as pegadinhas.", view: "resumo" },
-      { id: "d12t3", text: "Dormir cedo.", view: "inicio" }
+      { id: "d12t1", text: "Ler as 3 aulas de açúcares e edulcorantes.", view: "aprender", lesson: "b5l1" },
+      { id: "d12t2", text: "Fazer os flashcards de açúcares.", view: "flashcards" },
+      { id: "d12t3", text: "Responder 10 questões de açúcares.", view: "questoes" },
+      { id: "d12t4", text: "Ler o Resumão de açúcares e edulcorantes.", view: "resumo" },
+      { id: "d12t5", text: "Refazer o simulado de Bases e revisar os erros.", view: "simulado" }
     ]
   },
   {
