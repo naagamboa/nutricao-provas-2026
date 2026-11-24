@@ -120,7 +120,30 @@ window.NUT_GLOSSARY = [
   { term: "Edulcorante", module: "b5", definition: "Substância que confere sabor doce, natural ou artificial, calórica ou não. Adoça, mas nem sempre substitui funções do açúcar como conservar, dar corpo ou caramelizar." },
   { term: "Poliol", module: "b5", definition: "Açúcar-álcool (sorbitol, xilitol, maltitol, eritritol) com menos calorias e menor impacto glicêmico. Em excesso, causa efeito laxativo; xilitol é anticariogênico." },
   { term: "IDA (edulcorantes)", module: "b5", definition: "Ingestão Diária Aceitável: quantidade de edulcorante que pode ser consumida diariamente ao longo da vida sem risco apreciável, com margem de segurança." },
-  { term: "Ponto de calda", module: "b5", definition: "Estágio de concentração do açúcar por temperatura: fio 104–110 °C; bola mole 112–116 °C; bola dura 118–122 °C; quebradiço 145–155 °C; caramelo 160–180 °C." }
+  { term: "Ponto de calda", module: "b5", definition: "Estágio de concentração do açúcar por temperatura: fio 104–110 °C; bola mole 112–116 °C; bola dura 118–122 °C; quebradiço 145–155 °C; caramelo 160–180 °C." },
+  { term: "Acetil-CoA", module: "q1", definition: "Molécula que transporta o grupo acetila. Vem da glicose, dos ácidos graxos e dos aminoácidos e entra no Ciclo de Krebs. Não é precursor líquido de glicose." },
+  { term: "Ciclo de Krebs", module: "q1", definition: "Ciclo do ácido cítrico (TCA), na matriz mitocondrial. Oxida acetil-CoA e produz 2 CO₂, 3 NADH, 1 FADH2 e 1 GTP por volta. Também é anfibólico." },
+  { term: "Complexo piruvato-desidrogenase (PDH)", module: "q1", definition: "Converte piruvato em acetil-CoA + CO₂ + NADH. É irreversível nos animais e usa tiamina, lipoico, CoA, FAD e NAD." },
+  { term: "Anfibólico", module: "q1", definition: "Via que participa ao mesmo tempo do catabolismo e do anabolismo. O Ciclo de Krebs é o exemplo clássico." },
+  { term: "Anaplerose", module: "q1", definition: "Reação que repõe intermediários do Ciclo de Krebs desviados para síntese. Exemplo principal: piruvato-carboxilase (piruvato → oxaloacetato)." },
+  { term: "Quimiosmose", module: "q2", definition: "Uso do gradiente de prótons gerado pela cadeia respiratória para sintetizar ATP pela ATP sintase. Hipótese de Peter Mitchell." },
+  { term: "Força próton-motriz", module: "q2", definition: "Energia armazenada no gradiente de H⁺ e no potencial elétrico através da membrana mitocondrial interna; impulsiona a ATP sintase." },
+  { term: "Desacoplador", module: "q2", definition: "Substância que aumenta a permeabilidade da membrana a prótons e dissipa o gradiente: a cadeia queima substratos, o ATP cai e o calor aumenta (DNP, UCP1)." },
+  { term: "Glicogênese", module: "q3", definition: "Síntese de glicogênio no citosol: UDP-glicose → glicogenina → glicogênio-sintase (α-1,4) → enzima ramificadora (α-1,6). Insulina estimula." },
+  { term: "Glicogenólise", module: "q3", definition: "Degradação do glicogênio: fosforilase (G1P), desramificadora e fosfoglicomutase (G6P). Glucagon (fígado) e adrenalina (músculo) estimulam." },
+  { term: "Glicogenina", module: "q3", definition: "Proteína primer que recebe os primeiros resíduos de glicose na glicogênese. A glicogênio-sintase não inicia a cadeia com glicose livre." },
+  { term: "Glicose-6-fosfatase", module: "q3", definition: "Enzima do fígado e do rim que converte glicose-6-fosfato em glicose livre para o sangue. O músculo não a tem em quantidade relevante." },
+  { term: "Beta-oxidação", module: "q4", definition: "Oxidação mitocondrial de ácidos graxos em acetil-CoA, com produção de NADH e FADH2. Cada volta tem oxidação, hidratação, oxidação e tiólise." },
+  { term: "Corpos cetônicos", module: "q4", definition: "Acetoacetato, β-hidroxibutirato e acetona, produzidos no fígado no jejum prolongado. Usados por tecidos extra-hepáticos, inclusive o cérebro." },
+  { term: "Lipoproteína", module: "q4", definition: "Partícula que transporta lipídeos no sangue: quilomícron (TAG da dieta), VLDL (TAG hepático), LDL (colesterol aos tecidos) e HDL (transporte reverso)." },
+  { term: "Transaminação", module: "q5", definition: "Transferência do grupo amino de um aminoácido para o α-cetoglutarato, formando glutamato. Enzimas ALT/AST, cofator PLP (B6). É reversível." },
+  { term: "Desaminação oxidativa", module: "q5", definition: "Remoção do grupo amino do glutamato pela glutamato-desidrogenase, gerando α-cetoglutarato e NH₃/NH₄⁺. Ocorre na mitocôndria hepática." },
+  { term: "Ciclo da ureia", module: "q5", definition: "Via hepática que converte amônia em ureia. CPS I é a etapa reguladora, ativada por N-acetil-glutamato. Ocorre na mitocôndria e no citosol." },
+  { term: "Aminoácido glicogênico", module: "q5", definition: "Aminoácido cujo esqueleto de carbono gera piruvato ou intermediários do CK e pode produzir glicose. Ex.: alanina, glutamato, aspartato." },
+  { term: "Aminoácido cetogênico", module: "q5", definition: "Aminoácido que gera acetil-CoA ou acetoacetato e não produz glicose líquida. Leucina e lisina são exclusivamente cetogênicos." },
+  { term: "Gliconeogênese", module: "q6", definition: "Síntese de glicose a partir de precursores não glicídicos (lactato, glicerol, aminoácidos). Predomina no fígado após ~18 h de jejum." },
+  { term: "Ciclo de Cori", module: "q6", definition: "Lactato produzido no músculo é convertido em glicose no fígado pela gliconeogênese; a glicose retorna ao músculo." },
+  { term: "Ciclo glicose-alanina", module: "q6", definition: "Alanina leva nitrogênio do músculo ao fígado; o piruvato hepático vira glicose e o nitrogênio entra no ciclo da ureia." }
 ];
 
 window.NUT_PLAN = [
@@ -327,6 +350,69 @@ window.NUT_PLAN = [
       { id: "ds6t1", text: "Reler o Resumão de SAN.", view: "resumo" },
       { id: "ds6t2", text: "Revisar flashcards marcados.", view: "flashcards" },
       { id: "ds6t3", text: "Exercício avaliativo de SAN (14h).", view: "inicio" }
+    ]
+  },
+  {
+    id: "bq1", track: "bioq", day: "Segunda", date: "23/11", title: "Bioq: Ciclo de Krebs",
+    focus: "Acetil-CoA, as oito reações, balanço (3 NADH, 1 FADH2, 1 GTP) e regulação.",
+    tasks: [
+      { id: "bq1t1", text: "Ler as 3 aulas de Ciclo de Krebs.", view: "aprender", lesson: "q1l1" },
+      { id: "bq1t2", text: "Fazer os flashcards de Krebs.", view: "flashcards" },
+      { id: "bq1t3", text: "Responder 10 questões de Krebs.", view: "questoes" }
+    ]
+  },
+  {
+    id: "bq2", track: "bioq", day: "Quarta", date: "25/11", title: "Bioq: cadeia respiratória e FO",
+    focus: "Complexos I–V, quimiosmose, ATP sintase, inibidores, desacopladores e ROS.",
+    tasks: [
+      { id: "bq2t1", text: "Ler as 3 aulas de cadeia respiratória.", view: "aprender", lesson: "q2l1" },
+      { id: "bq2t2", text: "Fazer os flashcards de respiração.", view: "flashcards" },
+      { id: "bq2t3", text: "Responder 10 questões de respiração.", view: "questoes" }
+    ]
+  },
+  {
+    id: "bq3", track: "bioq", day: "Quinta", date: "26/11", title: "Bioq: metabolismo do glicogênio",
+    focus: "Glicogênese, glicogenólise, fígado x músculo, hormônios e glicogenoses.",
+    tasks: [
+      { id: "bq3t1", text: "Ler as 3 aulas de glicogênio.", view: "aprender", lesson: "q3l1" },
+      { id: "bq3t2", text: "Fazer os flashcards de glicogênio.", view: "flashcards" },
+      { id: "bq3t3", text: "Responder 10 questões de glicogênio.", view: "questoes" }
+    ]
+  },
+  {
+    id: "bq4", track: "bioq", day: "Sexta", date: "27/11", title: "Bioq: metabolismo de lipídeos",
+    focus: "Lipoproteínas, lipogênese, beta-oxidação, corpos cetônicos e dislipidemias.",
+    tasks: [
+      { id: "bq4t1", text: "Ler as 3 aulas de lipídeos.", view: "aprender", lesson: "q4l1" },
+      { id: "bq4t2", text: "Fazer os flashcards de lipídeos.", view: "flashcards" },
+      { id: "bq4t3", text: "Responder 10 questões de lipídeos.", view: "questoes" }
+    ]
+  },
+  {
+    id: "bq5", track: "bioq", day: "Sábado", date: "28/11", title: "Bioq: metabolismo de aminoácidos",
+    focus: "Transaminação, ciclo da ureia, esqueletos carbonados e doenças.",
+    tasks: [
+      { id: "bq5t1", text: "Ler as 3 aulas de aminoácidos.", view: "aprender", lesson: "q5l1" },
+      { id: "bq5t2", text: "Fazer os flashcards de aminoácidos.", view: "flashcards" },
+      { id: "bq5t3", text: "Responder 10 questões de aminoácidos.", view: "questoes" }
+    ]
+  },
+  {
+    id: "bq6", track: "bioq", day: "Domingo", date: "29/11", title: "Bioq: integração alimentado/jejum",
+    focus: "Hormônios, fases do jejum, Cori, glicose-alanina e cetose. Vale 1,0 na prova.",
+    tasks: [
+      { id: "bq6t1", text: "Ler as 3 aulas de integração.", view: "aprender", lesson: "q6l1" },
+      { id: "bq6t2", text: "Fazer o simulado de Bioquímica (20 questões/30 min).", view: "simulado" },
+      { id: "bq6t3", text: "Revisar todos os erros e o Resumão de integração.", view: "resumo" }
+    ]
+  },
+  {
+    id: "bq7", track: "bioq", day: "Segunda", date: "30/11", title: "Prova 3 de Bioquímica",
+    focus: "Revisão leve pela manhã. Prova teórica individual.",
+    tasks: [
+      { id: "bq7t1", text: "Reler o Resumão de respiração e integração.", view: "resumo" },
+      { id: "bq7t2", text: "Revisar os flashcards mais difíceis.", view: "flashcards" },
+      { id: "bq7t3", text: "Prova 3 de Bioquímica.", view: "inicio" }
     ]
   }
 ];

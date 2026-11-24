@@ -7,10 +7,26 @@
 .track-bases   { --track: #2f5d3a; --track-soft: #e6efe2; --track-deep: #244a2e; }
 .track-micro   { --track: #4c6f8f; --track-soft: #e3ecf2; --track-deep: #3b5873; }
 .track-san     { --track: #a4751b; --track-soft: #f8edcf; --track-deep: #7d5a12; }
+.track-bioq    { --track: #6d4c7d; --track-soft: #efe6f3; --track-deep: #553a63; }
 [data-theme="dark"] .track-materno { --track: #e39cae; --track-soft: #3a252c; --track-deep: #f0b6c3; }
 [data-theme="dark"] .track-bases   { --track: #9cc49f; --track-soft: #2a3a29; --track-deep: #b6d4b8; }
 [data-theme="dark"] .track-micro   { --track: #93b6d2; --track-soft: #26333d; --track-deep: #b1cbe0; }
 [data-theme="dark"] .track-san     { --track: #e5b65c; --track-soft: #3a3222; --track-deep: #f0cc82; }
+[data-theme="dark"] .track-bioq    { --track: #c7a9d8; --track-soft: #33293a; --track-deep: #dcc3e8; }
+
+/* Acento dos módulos de Bioquímica */
+.acc-plum { --acc: #6d4c7d; --acc-soft: #efe6f3; }
+[data-theme="dark"] .acc-plum { --acc: #c7a9d8; --acc-soft: #33293a; }
+
+/* Quinta cadeira ocupa a linha inteira no seletor */
+.subject-gate-grid .track-bioq { grid-column: 1 / -1; }
+
+/* Ordem por prova mais próxima: Bases, Micro, Bioq, depois as já realizadas */
+.subject-gate-grid .track-bases   { order: 1; }
+.subject-gate-grid .track-micro   { order: 2; }
+.subject-gate-grid .track-bioq    { order: 3; }
+.subject-gate-grid .track-materno { order: 4; }
+.subject-gate-grid .track-san     { order: 5; }
 
 /* Seletor de prova no contador */
 .exam-select { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 12px; }
@@ -345,3 +361,14 @@ p, li, .lesson-content, .lesson-content p, .lesson-content li, .option, .feedbac
   .exam-palette .palette { gap: 4px; }
   .palette button { font-size: 12px; }
 }
+
+/* Piso de 12px nos componentes restantes */
+.module-toggle .m-count, .sidebar-progress span, .plan-progress-box span, .deck-meta, .flip-hint,
+kbd, .materials-banner span, .exam-badge, .exam-subject-fixed span,
+.data-table th, .lesson-content th, .mini-note, .search-hint,
+#glossary-letters button, .glossary-item .g-module {
+  font-size: 12px !important;
+}
+
+/* Rótulos em caixa alta dentro de callouts */
+.callout strong, .callout.exam strong { font-size: 13px !important; }

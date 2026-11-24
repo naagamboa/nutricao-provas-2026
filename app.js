@@ -62,11 +62,24 @@
         "Monte a matriz patógeno x alimento x incubação x prevenção; é o que mais cai.",
         "Diferencie indicador de patógeno: coliforme alto não é Salmonella."
       ]
+    },
+    {
+      id: "bioq", name: "Bioquímica", short: "Bioq", date: "2026-11-30T10:00",
+      label: "Bioquímica", exam: "Prova 3 · 30/11 · horário a confirmar",
+      eyebrow: "Bioquímica · Prova 3 · 30/11",
+      title: "Bio<em>química</em>",
+      note: "Krebs, respiração, glicogênio, lipídeos e aminoácidos",
+      lead: "Foque na P3 de 30/11: Ciclo de Krebs, cadeia respiratória e fosforilação oxidativa, metabolismo do glicogênio, metabolismo de lipídeos, metabolismo de aminoácidos e integração alimentado/jejum.",
+      strategy: [
+        "Comece pelo balanço: CK (3 NADH, 1 FADH2, 1 GTP) e cadeia respiratória (NADH ~2,5 ATP; FADH2 ~1,5).",
+        "Separe glicogênio hepático x muscular e entenda por que só o fígado exporta glicose.",
+        "Para integração, decore a sequência do jejum: glicogênio → gliconeogênese → cetogênese."
+      ]
     }
   ];
   const TRACK_BY_ID = {};
   TRACKS.forEach((track) => { TRACK_BY_ID[track.id] = track; });
-  const ACCENT_BY_TRACK = { san: "mustard", materno: "berry", bases: "green", micro: "blue" };
+  const ACCENT_BY_TRACK = { san: "mustard", materno: "berry", bases: "green", micro: "blue", bioq: "plum" };
 
   const $ = (sel, root) => (root || document).querySelector(sel);
   const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
@@ -93,7 +106,7 @@
     streak: 0,
     lastActiveDate: null,
     quizStats: { answered: 0, correct: 0 },
-    trackStats: { san: { answered: 0, correct: 0 }, materno: { answered: 0, correct: 0 }, bases: { answered: 0, correct: 0 }, micro: { answered: 0, correct: 0 } },
+    trackStats: { san: { answered: 0, correct: 0 }, materno: { answered: 0, correct: 0 }, bases: { answered: 0, correct: 0 }, micro: { answered: 0, correct: 0 }, bioq: { answered: 0, correct: 0 } },
     quizHistory: [],
     examHistory: [],
     plan: {},
@@ -114,7 +127,7 @@
   let toastTimer = null;
 
   function normalizeTrackStats(raw) {
-    const base = { san: { answered: 0, correct: 0 }, materno: { answered: 0, correct: 0 }, bases: { answered: 0, correct: 0 }, micro: { answered: 0, correct: 0 } };
+    const base = { san: { answered: 0, correct: 0 }, materno: { answered: 0, correct: 0 }, bases: { answered: 0, correct: 0 }, micro: { answered: 0, correct: 0 }, bioq: { answered: 0, correct: 0 } };
     const source = raw || {};
     Object.keys(base).forEach((id) => {
       base[id] = Object.assign({ answered: 0, correct: 0 }, source[id] || {});

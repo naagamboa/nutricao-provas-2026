@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#8f3d52">
-  <meta name="description" content="Caderno interativo para Segurança Alimentar e Nutricional, as provas de Nutrição Materno Infantil, Bases da Técnica Dietética (cereais, açúcares, ovos, gorduras e carnes) e Análises Microbiológicas: aulas, flashcards, questões comentadas, simulados por prova e resumão.">
+  <meta name="description" content="Caderno interativo para Segurança Alimentar e Nutricional, Nutrição Materno Infantil, Bases da Técnica Dietética (cereais, açúcares, ovos, gorduras e carnes), Análises Microbiológicas e Bioquímica: aulas, flashcards, questões comentadas, simulados por prova e resumão.">
   <title>Nutrição 2026/2 · Caderno de provas</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261123a">
-  <link rel="stylesheet" href="extra.css?v=20261123a">
+  <link rel="stylesheet" href="styles.css?v=20261123b">
+  <link rel="stylesheet" href="extra.css?v=20261123b">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -135,6 +135,13 @@
           <span class="subject-choice-desc">Fundamentos, patógenos, deteriorantes, indicadores, fungos e probióticos.</span>
           <span class="subject-choice-meta">3 módulos · 9 aulas · 30 flashcards · 30 questões</span>
           <span class="subject-choice-cta">Estudar Micro <svg><use href="#i-arrow"></use></svg></span>
+        </button>
+        <button class="subject-choice track-bioq" type="button" data-subject-choice="bioq">
+          <span class="subject-choice-top"><span class="track-icon"><svg><use href="#i-spark"></use></svg></span><span class="subject-choice-kicker">Prova 3 · 30/11</span></span>
+          <strong>Bioquímica</strong>
+          <span class="subject-choice-desc">Ciclo de Krebs, cadeia respiratória, glicogênio, lipídeos, aminoácidos e integração alimentado/jejum.</span>
+          <span class="subject-choice-meta">6 módulos · 18 aulas · 60 flashcards · 60 questões</span>
+          <span class="subject-choice-cta">Estudar Bioquímica <svg><use href="#i-arrow"></use></svg></span>
         </button>
       </div>
       <p class="gate-note">Você pode trocar de cadeira a qualquer momento pelo botão no topo.</p>
@@ -322,6 +329,9 @@
             <li data-subject="san"><span>12</span><div><strong>SAN, LOSAN e DHAA</strong><p>Conceito, dimensões, direito humano e história brasileira.</p></div></li>
             <li data-subject="san"><span>13</span><div><strong>EBIA, VIGISAN e SOFI</strong><p>O que cada indicador mede e o que ele não mostra.</p></div></li>
             <li data-subject="san"><span>14</span><div><strong>Determinantes e sistemas</strong><p>Renda, gênero, território, clima e sistema alimentar.</p></div></li>
+            <li data-subject="bioq"><span>15</span><div><strong>Ciclo de Krebs e respiração</strong><p>Balanço de NADH/FADH2/GTP, complexos, quimiosmose e inibidores.</p></div></li>
+            <li data-subject="bioq"><span>16</span><div><strong>Glicogênio e lipídeos</strong><p>Glicogênese/glicogenólise, lipoproteínas, beta-oxidação e cetose.</p></div></li>
+            <li data-subject="bioq"><span>17</span><div><strong>Aminoácidos e integração</strong><p>Transaminação, ciclo da ureia, alimentado x jejum e ciclos.</p></div></li>
           </ul>
         </section>
 
@@ -330,7 +340,7 @@
             <svg><use href="#i-info"></use></svg>
             <div>
               <strong>Baseado nos materiais da professora e no calendário oficial</strong>
-              <p>As datas seguem o calendário revisado: SAN em 17/11, Materno em 18/11, Bases em 24/11 e Micro em 27/11. O conteúdo foi organizado a partir dos slides, planos de ensino, resumos e gabaritos comentados da professora, complementados por diretrizes oficiais (MS, OMS, ANVISA, FAO) e bibliografia da disciplina. Os arquivos originais estão em <button class="text-btn" data-go="materiais">Materiais</button>. Valores e condutas são de referência para estudo — na prova, siga o material do professor.</p>
+              <p>As datas seguem o calendário oficial: SAN em 17/11, Materno em 18/11, Bases em 24/11, Micro em 27/11 e Bioquímica (P3) em 30/11. O conteúdo foi organizado a partir dos slides, planos de ensino, estudos dirigidos, resumos e gabaritos dos professores, complementados por bibliografia da disciplina. Os arquivos originais estão em <button class="text-btn" data-go="materiais">Materiais</button>. Valores e condutas são de referência para estudo — na prova, siga o material do professor.</p>
             </div>
           </div>
         </section>
@@ -638,6 +648,11 @@
           <button class="summary-tab" data-summary-tab="ovos" data-subject="bases" role="tab" aria-selected="false">Bases · ovos</button>
           <button class="summary-tab" data-summary-tab="gorduras" data-subject="bases" role="tab" aria-selected="false">Bases · gorduras</button>
           <button class="summary-tab" data-summary-tab="carnes" data-subject="bases" role="tab" aria-selected="false">Bases · carnes</button>
+          <button class="summary-tab" data-summary-tab="bioq-respiracao" data-subject="bioq" role="tab" aria-selected="false">Bioq · respiração</button>
+          <button class="summary-tab" data-summary-tab="bioq-glicogenio" data-subject="bioq" role="tab" aria-selected="false">Bioq · glicogênio</button>
+          <button class="summary-tab" data-summary-tab="bioq-lipideos" data-subject="bioq" role="tab" aria-selected="false">Bioq · lipídeos</button>
+          <button class="summary-tab" data-summary-tab="bioq-aminoacidos" data-subject="bioq" role="tab" aria-selected="false">Bioq · aminoácidos</button>
+          <button class="summary-tab" data-summary-tab="bioq-integracao" data-subject="bioq" role="tab" aria-selected="false">Bioq · integração</button>
           <button class="summary-tab" data-summary-tab="patogenos" data-subject="micro" role="tab" aria-selected="false">Micro · patógenos</button>
           <button class="summary-tab" data-summary-tab="indicadores" data-subject="micro" role="tab" aria-selected="false">Micro · indicadores</button>
           <button class="summary-tab" data-summary-tab="controle" data-subject="micro" role="tab" aria-selected="false">Micro · controle</button>
@@ -1368,6 +1383,240 @@
           </div>
         </div>
 
+        <div class="summary-panel" data-summary-panel="bioq-respiracao" data-subject="bioq">
+          <div class="table-stack">
+            <section class="table-card">
+              <h3>Ciclo de Krebs: números que caem</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Produto</th><th>Por acetil-CoA</th><th>Por glicose (2 voltas)</th></tr></thead>
+                <tbody>
+                  <tr><td>CO₂</td><td>2</td><td>4</td></tr>
+                  <tr><td>NADH</td><td>3</td><td>6</td></tr>
+                  <tr><td>FADH2</td><td>1</td><td>2</td></tr>
+                  <tr><td>GTP → ATP</td><td>1</td><td>2</td></tr>
+                </tbody>
+              </table>
+              <p class="mini-note">Local: matriz mitocondrial. O ciclo não usa O₂ diretamente. Succinato-desidrogenase = Complexo II. Piruvato → acetil-CoA é irreversível (PDH).</p>
+            </section>
+
+            <section class="table-card">
+              <h3>Cadeia respiratória: complexos</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Complexo</th><th>Nome</th><th>Entrada / bomba</th></tr></thead>
+                <tbody>
+                  <tr><td>I</td><td>NADH-desidrogenase</td><td>NADH; bombeia 4 H⁺</td></tr>
+                  <tr><td>II</td><td>Succinato-desidrogenase</td><td>FADH2; não bombeia</td></tr>
+                  <tr><td>III</td><td>Citocromo c oxidorredutase</td><td>CoQ → cit c; bombeia 4 H⁺</td></tr>
+                  <tr><td>IV</td><td>Citocromo c oxidase</td><td>O₂ → H₂O; bombeia 2 H⁺</td></tr>
+                  <tr><td>V</td><td>ATP sintase</td><td>H⁺ → ATP (F₀ canal; F₁ catálise)</td></tr>
+                </tbody>
+              </table>
+              <p class="mini-note">NADH ~2,5 ATP; FADH2 ~1,5 ATP. Quimiosmose: gradiente de H⁺ → força próton-motriz → ATP.</p>
+            </section>
+
+            <section class="table-card">
+              <h3>Inibidores x desacopladores</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Agente</th><th>Alvo / efeito</th></tr></thead>
+                <tbody>
+                  <tr><td>Rotenona</td><td>Complexo I → CoQ: bloqueia elétrons do NADH</td></tr>
+                  <tr><td>Antimicina A</td><td>Complexo III: interrompe o fluxo</td></tr>
+                  <tr><td>Cianeto / CO</td><td>Complexo IV: impede reduzir O₂</td></tr>
+                  <tr><td>Oligomicina</td><td>ATP sintase: bloqueia o canal de H⁺</td></tr>
+                  <tr><td>DNP / UCP1</td><td>Desacoplam: dissipam o gradiente e geram calor</td></tr>
+                </tbody>
+              </table>
+              <div class="callout exam"><strong>ROS e antioxidantes</strong><p>Vazamento de elétrons nos complexos I e III gera superóxido → H₂O₂ → OH·. Defesas: SOD, catalase e glutationa peroxidase/redutase (NADPH).</p></div>
+            </section>
+          </div>
+        </div>
+
+        <div class="summary-panel" data-summary-panel="bioq-glicogenio" data-subject="bioq">
+          <div class="table-stack">
+            <section class="table-card">
+              <h3>Fígado x músculo</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Aspecto</th><th>Fígado</th><th>Músculo</th></tr></thead>
+                <tbody>
+                  <tr><td>Função</td><td>Manter glicemia</td><td>Energia para contração</td></tr>
+                  <tr><td>Glicose-6-fosfatase</td><td>Sim</td><td>Não relevante</td></tr>
+                  <tr><td>Hormônio</td><td>Glucagon</td><td>Adrenalina</td></tr>
+                  <tr><td>Destino</td><td>Glicose no sangue</td><td>Glicólise local</td></tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="table-card">
+              <h3>Enzimas da síntese e da degradação</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Processo</th><th>Enzima</th><th>Ligação / produto</th></tr></thead>
+                <tbody>
+                  <tr><td>Glicogênese</td><td>UDP-glicose pirofosforilase</td><td>Ativa a glicose como UDP-glicose</td></tr>
+                  <tr><td>Glicogênese</td><td>Glicogenina</td><td>Primer proteico</td></tr>
+                  <tr><td>Glicogênese</td><td>Glicogênio-sintase</td><td>α-1,4</td></tr>
+                  <tr><td>Glicogênese</td><td>Enzima ramificadora (4:6-transferase)</td><td>α-1,6</td></tr>
+                  <tr><td>Glicogenólise</td><td>Glicogênio-fosforilase</td><td>Fosforólise α-1,4 → G1P</td></tr>
+                  <tr><td>Glicogenólise</td><td>Desramificadora</td><td>Transferase + α-1,6-glicosidase</td></tr>
+                  <tr><td>Glicogenólise</td><td>Fosfoglicomutase</td><td>G1P → G6P</td></tr>
+                </tbody>
+              </table>
+              <p class="mini-note">G6P: glicólise, glicose livre (fígado/rim) ou via das pentoses (NADPH + ribose). Insulina ativa síntese; glucagon/adrenalina ativam degradação via cAMP-PKA.</p>
+            </section>
+
+            <section class="table-card">
+              <h3>Glicogenoses</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Tipo</th><th>Deficiência</th><th>Marca</th></tr></thead>
+                <tbody>
+                  <tr><td>Von Gierke (I)</td><td>Glicose-6-fosfatase</td><td>Hipoglicemia grave, hepatomegalia</td></tr>
+                  <tr><td>Pompe (II)</td><td>α-glicosidase lisossomal</td><td>Cardiomegalia, fraqueza</td></tr>
+                  <tr><td>Cori (III)</td><td>Desramificadora</td><td>Hepatomegalia, hipoglicemia</td></tr>
+                  <tr><td>McArdle (V)</td><td>Fosforilase muscular</td><td>Cãibras ao exercício</td></tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </div>
+
+        <div class="summary-panel" data-summary-panel="bioq-lipideos" data-subject="bioq">
+          <div class="table-stack">
+            <section class="table-card">
+              <h3>Da dieta ao quilomícron</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Etapa</th><th>O que acontece</th></tr></thead>
+                <tbody>
+                  <tr><td>Emulsificação</td><td>Sais biliares + movimento formam micelas</td></tr>
+                  <tr><td>Hidrólise</td><td>Lipase pancreática → ácidos graxos + 2-monoacilglicerol</td></tr>
+                  <tr><td>Absorção</td><td>Enterócito; reesterificação a TAG</td></tr>
+                  <tr><td>Quilomícron</td><td>TAG + colesterol + apolipoproteínas → linfa → sangue</td></tr>
+                  <tr><td>LPL</td><td>Ativada por ApoC-II; libera AG e glicerol para tecidos</td></tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="table-card">
+              <h3>Lipoproteínas e dislipidemia</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Lipoproteína</th><th>Função</th><th>Referência</th></tr></thead>
+                <tbody>
+                  <tr><td>Quilomícron</td><td>TAG da dieta</td><td>—</td></tr>
+                  <tr><td>VLDL</td><td>TAG hepático</td><td>—</td></tr>
+                  <tr><td>LDL</td><td>Colesterol aos tecidos</td><td>Ótimo &lt; 100 mg/dL</td></tr>
+                  <tr><td>HDL</td><td>Transporte reverso</td><td>Ótimo &gt; 60 mg/dL</td></tr>
+                  <tr><td>Triglicerídeos</td><td>Reserva/transporte</td><td>Ótimo &lt; 150 mg/dL</td></tr>
+                </tbody>
+              </table>
+              <p class="mini-note">LDL oxidado → macrófagos → células espumosas → placa aterosclerótica. Estatinas inibem HMG-CoA-redutase; ezetimiba reduz absorção; resinas sequestram sais biliares.</p>
+            </section>
+
+            <section class="table-card">
+              <h3>Beta-oxidação e cetogênese</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Etapa</th><th>Produto</th></tr></thead>
+                <tbody>
+                  <tr><td>1. Oxidação</td><td>FADH2</td></tr>
+                  <tr><td>2. Hidratação</td><td>β-hidroxiacil-CoA</td></tr>
+                  <tr><td>3. Oxidação</td><td>NADH</td></tr>
+                  <tr><td>4. Tiólise</td><td>Acetil-CoA + acil-CoA (2C menor)</td></tr>
+                </tbody>
+              </table>
+              <p class="mini-note">Palmitato (16C): 7 voltas → 8 acetil-CoA + 7 FADH2 + 7 NADH (~106 ATP). Ativação consome 2 ATP. Carnitina (CPT1/CPT2) leva o acil-CoA à mitocôndria.</p>
+              <div class="callout exam"><strong>Corpos cetônicos</strong><p>Jejum prolongado → acetil-CoA acima da capacidade do CK → acetoacetato, β-hidroxibutirato e acetona no fígado. O cérebro usa cetônicos e poupa glicose/proteína.</p></div>
+            </section>
+          </div>
+        </div>
+
+        <div class="summary-panel" data-summary-panel="bioq-aminoacidos" data-subject="bioq">
+          <div class="table-stack">
+            <section class="table-card">
+              <h3>Transaminação e desaminação</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Processo</th><th>Enzima / cofator</th><th>Produto</th></tr></thead>
+                <tbody>
+                  <tr><td>Transaminação</td><td>ALT (alanina) / AST (aspartato); PLP (B6)</td><td>Glutamato + α-cetoácido</td></tr>
+                  <tr><td>Desaminação oxidativa</td><td>Glutamato-desidrogenase (mitocôndria)</td><td>α-cetoglutarato + NH₃/NH₄⁺</td></tr>
+                  <tr><td>Transporte de N</td><td>Alanina (músculo); glutamina (tecidos)</td><td>Nitrogênio ao fígado</td></tr>
+                </tbody>
+              </table>
+              <p class="mini-note">ALT e AST elevadas no plasma indicam lesão hepática. A transaminação é reversível; não libera amônia.</p>
+            </section>
+
+            <section class="table-card">
+              <h3>Ciclo da ureia</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Etapa</th><th>Enzima</th><th>Produto</th></tr></thead>
+                <tbody>
+                  <tr><td>1</td><td>Carbamoil-fosfato sintetase I (CPS I)</td><td>Carbamoil-fosfato (reguladora; NAG ativa)</td></tr>
+                  <tr><td>2</td><td>Ornitina transcarbamoilase</td><td>Citrulina</td></tr>
+                  <tr><td>3</td><td>Argininossuccinato sintetase</td><td>Argininossuccinato</td></tr>
+                  <tr><td>4</td><td>Argininossuccinato liase</td><td>Arginina + fumarato</td></tr>
+                  <tr><td>5</td><td>Arginase</td><td>Ureia + ornitina</td></tr>
+                </tbody>
+              </table>
+              <p class="mini-note">Ocorre no fígado (mitocôndria + citosol). Feed-forward: mais aminoácidos → mais ureia. Dieta hiperproteica e jejum aumentam; cetose prolongada reduz.</p>
+            </section>
+
+            <section class="table-card">
+              <h3>Destino do carbono e doenças</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Grupo</th><th>Destino</th><th>Exemplos</th></tr></thead>
+                <tbody>
+                  <tr><td>Glicogênicos</td><td>Glicose</td><td>Alanina, glutamato, aspartato, serina</td></tr>
+                  <tr><td>Cetogênicos</td><td>Acetil-CoA / cetônicos</td><td>Leucina e lisina (exclusivos)</td></tr>
+                  <tr><td>Mistos</td><td>Ambos</td><td>Isoleucina, fenilalanina, tirosina, triptofano</td></tr>
+                </tbody>
+              </table>
+              <p class="mini-note">PKU: fenilalanina-hidroxilase. Xarope de bordo: BCKDH. Alcaptonúria: homogentisato oxidase. Homocistinúria: cistationina-β-sintase. Distúrbios do ciclo da ureia: hiperamonemia.</p>
+            </section>
+          </div>
+        </div>
+
+        <div class="summary-panel" data-summary-panel="bioq-integracao" data-subject="bioq">
+          <div class="table-stack">
+            <section class="table-card">
+              <h3>Alimentado x jejum</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Via</th><th>Alimentado</th><th>Jejum</th></tr></thead>
+                <tbody>
+                  <tr><td>Glicogênese</td><td>Alta</td><td>Baixa</td></tr>
+                  <tr><td>Glicogenólise</td><td>Baixa</td><td>Alta</td></tr>
+                  <tr><td>Gliconeogênese</td><td>Baixa</td><td>Alta</td></tr>
+                  <tr><td>Lipogênese</td><td>Alta</td><td>Baixa</td></tr>
+                  <tr><td>Lipólise</td><td>Baixa</td><td>Alta</td></tr>
+                  <tr><td>Cetogênese</td><td>Baixa</td><td>Alta (fígado)</td></tr>
+                </tbody>
+              </table>
+              <p class="mini-note">Insulina = armazenar (glicogênese, lipogênese, síntese proteica). Glucagon = mobilizar fígado. Adrenalina = mobilizar músculo. Cortisol = proteólise/gliconeogênese no estresse.</p>
+            </section>
+
+            <section class="table-card">
+              <h3>Linha do tempo do jejum</h3>
+              <table class="data-table wide">
+                <thead><tr><th>Fase</th><th>Tempo</th><th>Fonte</th></tr></thead>
+                <tbody>
+                  <tr><td>Absortiva</td><td>0–4 h</td><td>Glicose da dieta</td></tr>
+                  <tr><td>Pós-absortiva</td><td>4–18 h</td><td>Glicogenólise hepática</td></tr>
+                  <tr><td>Jejum intermediário</td><td>&gt; 18 h</td><td>Gliconeogênese (lactato, glicerol, AA)</td></tr>
+                  <tr><td>Jejum prolongado</td><td>2–3 dias+</td><td>Cetogênese; cérebro usa cetônicos</td></tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="table-card">
+              <h3>Ciclos e pegadinhas</h3>
+              <ul class="check-list">
+                <li><strong>Cori:</strong> lactato muscular → glicose hepática → músculo.</li>
+                <li><strong>Glicose-alanina:</strong> alanina leva N ao fígado; piruvato → glicose; N → ureia.</li>
+                <li><strong>Músculo não exporta glicose:</strong> falta G6Pase.</li>
+                <li><strong>Gordura não vira glicose:</strong> acetil-CoA não é precursor líquido; só glicerol e AA glicogênicos.</li>
+                <li><strong>CK não consome O₂:</strong> quem consome é a cadeia respiratória.</li>
+                <li><strong>Ureia no jejum:</strong> sobe no início e cai na cetose prolongada (poupa proteína).</li>
+              </ul>
+              <div class="callout exam"><strong>Regra de ouro</strong><p>Alimentado = insulina = armazenar. Jejum = glucagon/adrenalina = mobilizar. Jejum prolongado = cetose = poupar proteína.</p></div>
+            </section>
+          </div>
+        </div>
+
         <div class="summary-panel" data-summary-panel="patogenos" data-subject="micro">
           <div class="table-stack">
             <section class="table-card">
@@ -1878,21 +2127,24 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="data/modules-materno.js?v=20261123a"></script>
-  <script src="data/modules-bases.js?v=20261123a"></script>
-  <script src="data/modules-micro.js?v=20261123a"></script>
-  <script src="data/modules-san.js?v=20261123a"></script>
-  <script src="data/cards.js?v=20261123a"></script>
-  <script src="data/cards-san.js?v=20261123a"></script>
-  <script src="data/cards-materno.js?v=20261123a"></script>
-  <script src="data/questions.js?v=20261123a"></script>
-  <script src="data/questions-san.js?v=20261123a"></script>
-  <script src="data/questions-materno.js?v=20261123a"></script>
-  <script src="data/materials.js?v=20261123a"></script>
-  <script src="data/meta.js?v=20261123a"></script>
-  <script src="data/plan-materno.js?v=20261123a"></script>
-  <script src="data/glossary-materno.js?v=20261123a"></script>
-  <script src="app.js?v=20261123a"></script>
+  <script src="data/modules-materno.js?v=20261123b"></script>
+  <script src="data/modules-bases.js?v=20261123b"></script>
+  <script src="data/modules-micro.js?v=20261123b"></script>
+  <script src="data/modules-san.js?v=20261123b"></script>
+  <script src="data/modules-bioq.js?v=20261123b"></script>
+  <script src="data/cards.js?v=20261123b"></script>
+  <script src="data/cards-san.js?v=20261123b"></script>
+  <script src="data/cards-materno.js?v=20261123b"></script>
+  <script src="data/cards-bioq.js?v=20261123b"></script>
+  <script src="data/questions.js?v=20261123b"></script>
+  <script src="data/questions-san.js?v=20261123b"></script>
+  <script src="data/questions-materno.js?v=20261123b"></script>
+  <script src="data/questions-bioq.js?v=20261123b"></script>
+  <script src="data/materials.js?v=20261123b"></script>
+  <script src="data/meta.js?v=20261123b"></script>
+  <script src="data/plan-materno.js?v=20261123b"></script>
+  <script src="data/glossary-materno.js?v=20261123b"></script>
+  <script src="app.js?v=20261123b"></script>
 </body>
 </html>
 
