@@ -18,15 +18,12 @@
 .acc-plum { --acc: #6d4c7d; --acc-soft: #efe6f3; }
 [data-theme="dark"] .acc-plum { --acc: #c7a9d8; --acc-soft: #33293a; }
 
-/* Quinta cadeira ocupa a linha inteira no seletor */
-.subject-gate-grid .track-bioq { grid-column: 1 / -1; }
-
-/* Ordem por prova mais próxima: Bases, Micro, Bioq, depois as já realizadas */
-.subject-gate-grid .track-bases   { order: 1; }
-.subject-gate-grid .track-micro   { order: 2; }
-.subject-gate-grid .track-bioq    { order: 3; }
-.subject-gate-grid .track-materno { order: 4; }
-.subject-gate-grid .track-san     { order: 5; }
+/* Só as duas provas que faltam: um cartão por coluna */
+.subject-gate-grid .track-bioq  { grid-column: auto; order: 1; }
+.subject-gate-grid .track-micro { grid-column: auto; order: 2; }
+.subject-gate-grid .track-bases,
+.subject-gate-grid .track-materno,
+.subject-gate-grid .track-san   { display: none; }
 
 /* Seletor de prova no contador */
 .exam-select { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 12px; }
@@ -372,3 +369,15 @@ kbd, .materials-banner span, .exam-badge, .exam-subject-fixed span,
 
 /* Rótulos em caixa alta dentro de callouts */
 .callout strong, .callout.exam strong { font-size: 13px !important; }
+
+/* Expoentes e unidades legíveis */
+.lesson-content sup, .summary-panel sup { font-size: 12px !important; line-height: 1; }
+
+/* Tabelas longas do resumão não podem empurrar a página no celular */
+@media (max-width: 720px) {
+  .summary-tabs { overflow-x: auto; }
+  .summary-panel .table-card { max-width: 100%; overflow-x: auto; }
+}
+
+/* Metadados da aula também no piso de 12px */
+.module-pill, .lesson-time, #lesson-minutes, .lesson-foot-mid { font-size: 12px !important; }

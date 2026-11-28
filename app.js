@@ -12,58 +12,6 @@
   const LEVEL_LABEL = { facil: "Fácil", medio: "Médio", dificil: "Difícil" };
   const TRACKS = [
     {
-      id: "san", name: "Segurança Alimentar e Nutricional", short: "SAN", date: "2026-11-17T14:00",
-      label: "Segurança Alimentar e Nutricional", exam: "Exercício Avaliativo · 17/11 · 14h",
-      eyebrow: "SAN · Exercício Avaliativo · 17/11 · 14h",
-      title: "Segurança <em>Alimentar e Nutricional</em>",
-      note: "conceitos, indicadores e situações-problema",
-      lead: "Estude para a prova de terça: SAN, história, DHAA, fome, insegurança alimentar, EBIA, VIGISAN, SOFI, determinantes, sistemas alimentares, atuação do nutricionista e extensão.",
-      strategy: [
-        "Para cada indicador, pergunte o que ele mede e o que ele não mostra.",
-        "Relacione todo conceito a uma situação real: renda, território, gênero, raça e política.",
-        "Em situação-problema, use a sequência: conceito → indicador → determinantes → ação."
-      ]
-    },
-    {
-      id: "materno", name: "Materno Infantil", short: "Materno", date: "2026-11-18T14:00",
-      label: "Nutrição Materno Infantil", exam: "Prova 2 · 18/11 · 14h",
-      eyebrow: "Materno Infantil · Prova 2 · 18/11 · 14h",
-      title: "Materno <em>Infantil</em>",
-      note: "lactente, escolar, adolescente e composição corporal",
-      lead: "Foque na Prova 2: antropometria do lactente e do RN, pré-escolar, escolar, adolescente, desnutrição, sobrepeso/obesidade e composição corporal. A prova tem situações-problema e interpretação de dados.",
-      strategy: [
-        "Comece pela técnica antropométrica e pelos indicadores; depois interprete curvas e casos.",
-        "Diferencie desnutrição aguda/crônica, kwashiorkor/marasmo e o papel do MUAC.",
-        "No adolescente, relacione Tanner, estirão, imagem corporal e necessidades; na obesidade, intervenção não prescritiva."
-      ]
-    },
-    {
-      id: "bases", name: "Bases da Técnica Dietética", short: "Bases", date: "2026-11-24T17:30",
-      label: "Bases da Técnica Dietética", exam: "Prova Teórica 3 · 24/11 · 17h30",
-      eyebrow: "Bases da Técnica Dietética · P3 · 24/11 · 17h30",
-      title: "Bases da <em>Técnica Dietética</em>",
-      note: "cereais, açúcares, ovos, gorduras e carnes",
-      lead: "Foque na Prova 3: cereais (págs. 23–31 e 59–66), açúcares e edulcorantes (págs. 2–27 e 32–39), ovos, óleos e gorduras e carnes. Estrutura, transformações, cocção, qualidade e segurança — sem a prova prática.",
-      strategy: [
-        "Para cada técnica, pergunte: o que o calor, a água e a gordura fazem com essa estrutura?",
-        "Domine os três processos do amido (gelatinização, retrogradação e dextrinização) e as funções do açúcar.",
-        "Decore as temperaturas e os pontos de fumaça; são questões rápidas e frequentes."
-      ]
-    },
-    {
-      id: "micro", name: "Análises Microbiológicas", short: "Micro", date: "2026-11-27T14:00",
-      label: "Análises Microbiológicas", exam: "A2 · 27/11 · 14h",
-      eyebrow: "Análises Microbiológicas · A2 · 27/11 · 14h",
-      title: "Análises <em>Microbiológicas</em>",
-      note: "patógenos, indicadores, fungos e benéficos",
-      lead: "Estude a A2 teórica: fundamentos e crescimento, patógenos e DTAs, deteriorantes, indicadores, fungos, micotoxinas e probióticos/prebióticos.",
-      strategy: [
-        "Separe o mecanismo antes do nome: infecção, intoxicação ou toxinfecção.",
-        "Monte a matriz patógeno x alimento x incubação x prevenção; é o que mais cai.",
-        "Diferencie indicador de patógeno: coliforme alto não é Salmonella."
-      ]
-    },
-    {
       id: "bioq", name: "Bioquímica", short: "Bioq", date: "2026-11-30T10:00",
       label: "Bioquímica", exam: "Prova 3 · 30/11 · horário a confirmar",
       eyebrow: "Bioquímica · Prova 3 · 30/11",
@@ -74,6 +22,20 @@
         "Comece pelo balanço: CK (3 NADH, 1 FADH2, 1 GTP) e cadeia respiratória (NADH ~2,5 ATP; FADH2 ~1,5).",
         "Separe glicogênio hepático x muscular e entenda por que só o fígado exporta glicose.",
         "Para integração, decore a sequência do jejum: glicogênio → gliconeogênese → cetogênese."
+      ]
+    },
+    {
+      id: "micro", name: "Análises Microbiológicas", short: "Micro", date: "2026-12-04T14:00",
+      label: "Análises Microbiológicas", exam: "A3/Faltantes · 04/12 · 14h",
+      eyebrow: "Análises Microbiológicas · A3/Faltantes · 04/12 · 14h",
+      title: "Análises <em>Microbiológicas</em>",
+      note: "protocolos, contagem, deteriorantes, fungos e benéficos",
+      lead: "Foco total na prova de 04/12 (A3/Faltantes, turma 3, sala 305): protocolo de Salmonella, protocolo de Staphylococcus aureus, cálculo pour-plate e spread-plate, deteriorantes e indicadores, microrganismos benéficos e fungos. A lista de conteúdo foi retirada do próprio Moodle da professora Marjo.",
+      strategy: [
+        "Domine a sequência dos protocolos: enriquecimento → plaqueamento seletivo → colônias típicas → confirmação.",
+        "Treine os cálculos de UFC com os limites de contagem de cada método (15–300, 15–150, 25–250).",
+        "Para fungos, separe leveduras x filamentosos, reprodução, deterioração e micotoxinas.",
+        "Para benéficos, saiba probiótico x prebiótico x simbiótico, critérios de cepa e dose."
       ]
     }
   ];
@@ -98,8 +60,8 @@
   const DEFAULT_STATE = {
     theme: null,
     track: null,
-    examDate: "2026-11-18T14:00",
-    examTrack: "materno",
+    examDate: "2026-12-04T14:00",
+    examTrack: "micro",
     lessons: {},
     cards: {},
     xp: 0,
@@ -140,7 +102,7 @@
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return JSON.parse(JSON.stringify(DEFAULT_STATE));
       const parsed = JSON.parse(raw);
-      return Object.assign(JSON.parse(JSON.stringify(DEFAULT_STATE)), parsed, {
+      const next = Object.assign(JSON.parse(JSON.stringify(DEFAULT_STATE)), parsed, {
         lessons: Object.assign({}, parsed.lessons),
         cards: Object.assign({}, parsed.cards),
         plan: Object.assign({}, parsed.plan),
@@ -149,6 +111,19 @@
         quizHistory: Array.isArray(parsed.quizHistory) ? parsed.quizHistory : [],
         examHistory: Array.isArray(parsed.examHistory) ? parsed.examHistory : []
       });
+      // Cadeiras antigas saíram do seletor: volta para a próxima prova.
+      if (next.track && !TRACK_BY_ID[next.track]) {
+        next.track = null;
+        next.lastLesson = null;
+      }
+      if (!TRACK_BY_ID[next.examTrack]) {
+        next.examTrack = "micro";
+        next.examDate = "2026-12-04T14:00";
+      }
+      if (next.examTrack === "micro" && new Date(next.examDate).getTime() < new Date("2026-11-28T00:00").getTime()) {
+        next.examDate = "2026-12-04T14:00";
+      }
+      return next;
     } catch (err) {
       return JSON.parse(JSON.stringify(DEFAULT_STATE));
     }
@@ -634,6 +609,9 @@
       const active = tab.dataset.summaryTab === name;
       tab.classList.toggle("active", active);
       tab.setAttribute("aria-selected", active ? "true" : "false");
+      if (active && tab.getClientRects().length) {
+        tab.scrollIntoView({ block: "nearest", inline: "center" });
+      }
     });
     $$(".summary-panel").forEach((panel) => {
       panel.classList.toggle("active", panel.dataset.summaryPanel === name && !panel.hidden);

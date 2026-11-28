@@ -442,6 +442,70 @@ window.NUT_MODULES = (window.NUT_MODULES || []).concat([
   <div class="quick-body"><p>Porque o processo de secagem não garante esterilidade e pode haver <em>Cronobacter</em>. A reconstituição com água ≥ 70 °C reduz o risco, mas não substitui boas práticas.</p></div>
 </details>
 `
+      },
+      {
+        id: "x2l4",
+        title: "Casos clínicos de DTA: como chegar ao agente",
+        minutes: 12,
+        intro: "A prova da professora é feita de casos. Use quatro perguntas para reduzir as alternativas e não errar por detalhe.",
+        content: `
+<p class="lead">Em vez de decorar uma lista de patógenos, resolva o caso em quatro perguntas: <strong>quanto tempo demorou?</strong>, <strong>qual o mecanismo?</strong>, <strong>qual a morfologia/coloração?</strong> e <strong>qual o alimento?</strong>. Com essas quatro respostas, sobra pouco espaço para erro.</p>
+
+<h3>Roteiro de 4 perguntas</h3>
+<ol>
+  <li><strong>Período de incubação:</strong> 1–6 h sugere toxina pré-formada (<em>S. aureus</em>, <em>B. cereus</em> emético); 8–16 h sugere <em>C. perfringens</em>; 12–36 h com paralisia sugere botulismo; 6–72 h com febre sugere <em>Salmonella</em>; 2–5 dias sugere <em>Campylobacter</em>; 3–4 dias com sangue sugere STEC; 1–70 dias com meningite/aborto sugere <em>Listeria</em>.</li>
+  <li><strong>Mecanismo:</strong> infecção (coloniza/invade), intoxicação (toxina pronta no alimento) ou toxinfecção (multiplica no intestino e produz toxina).</li>
+  <li><strong>Morfologia/coloração:</strong> Gram-negativo curvo (Vibrio, Helicobacter), Gram-negativo reto (Salmonella, E. coli), Gram-positivo em cachos (S. aureus), Gram-positivo esporulado (Clostridium, Bacillus), vírus etc.</li>
+  <li><strong>Alimento e contexto:</strong> ovos/aves (Salmonella), frango (Campylobacter), carne moída (STEC), presunto/queijo (S. aureus), conserva artesanal (botulismo), carne assada (C. perfringens), queijo mole/frios (Listeria), água/frutos do mar (Vibrio).</li>
+</ol>
+
+<h3>Matriz de decisão rápida</h3>
+<table>
+  <thead><tr><th>Pista</th><th>Agente provável</th><th>Mecanismo</th></tr></thead>
+  <tbody>
+    <tr><td>Vômitos em 1–6 h, sem febre, presunto/queijo</td><td><em>S. aureus</em></td><td>Intoxicação</td></tr>
+    <tr><td>Vômitos em 0,5–6 h, arroz cozido</td><td><em>B. cereus</em> emético</td><td>Intoxicação</td></tr>
+    <tr><td>Diarreia em 8–16 h, carne/molho, sem febre</td><td><em>C. perfringens</em></td><td>Toxinfecção</td></tr>
+    <tr><td>Paralisia flácida descendente, visão dupla, conserva</td><td><em>C. botulinum</em></td><td>Intoxicação</td></tr>
+    <tr><td>Diarreia + febre em 6–72 h, ovos/aves</td><td><em>Salmonella</em></td><td>Infecção</td></tr>
+    <tr><td>Diarreia sanguinolenta em 2–5 dias, frango</td><td><em>Campylobacter</em></td><td>Infecção</td></tr>
+    <tr><td>Diarreia sanguinolenta + SHU, carne moída</td><td><em>E. coli</em> STEC</td><td>Toxinfecção</td></tr>
+    <tr><td>Meningite/aborto em gestante/imunossuprimido</td><td><em>Listeria monocytogenes</em></td><td>Infecção</td></tr>
+    <tr><td>Diarreia “água de arroz”, desidratação, água/frutos do mar</td><td><em>Vibrio cholerae</em></td><td>Toxinfecção</td></tr>
+    <tr><td>Úlcera, bactéria curva, urease positiva</td><td><em>Helicobacter pylori</em></td><td>Infecção crônica</td></tr>
+  </tbody>
+</table>
+
+<h3>Casos do estudo dirigido — respostas comentadas</h3>
+<table>
+  <thead><tr><th>Caso</th><th>Resposta</th><th>Por quê</th></tr></thead>
+  <tbody>
+    <tr><td>Mulher de 63 anos, diarreia “água de arroz”, cheiro de peixe, desidratação, Gram-negativa.</td><td><strong>Cólera — Vibrio cholerae</strong></td><td>Diarreia profusa, desidratação e aspecto de água de arroz são clássicos. A bactéria é Gram-negativa em forma de vírgula, móvel por flagelo polar.</td></tr>
+    <tr><td>No mesmo caso, por que é toxinfecção?</td><td><strong>Toxina colérica</strong></td><td>O <em>V. cholerae</em> coloniza o intestino e produz a toxina colérica no local, que aumenta a secreção de fluidos.</td></tr>
+    <tr><td>Homem de 45 anos, úlceras, biópsia com bactéria Gram-negativa curva/espiralada e urease positiva.</td><td><strong>Helicobacter pylori</strong></td><td>A urease é o marcador clássico; a bactéria é microaerófila, espiralada e coloniza a mucosa gástrica.</td></tr>
+    <tr><td>Casamento, 70 convidados, gastroenterite 14 h após buffet, carne de porco e maionese, Gram-negativa.</td><td><strong>Salmonella</strong></td><td>Incubação de 6–72 h, febre e diarreia, envolvimento de ovos/aves/carnes e maionese caseira.</td></tr>
+    <tr><td>Teste da ureia para <em>H. pylori</em>: qual resultado?</td><td><strong>Urease positiva</strong></td><td>A bactéria produz urease, que transforma ureia em amônia e CO<sub>2</sub>, alcalinizando o meio.</td></tr>
+    <tr><td>Sanduíche de presunto e queijo em temperatura ambiente; vômitos 1 h depois.</td><td><strong>Staphylococcus aureus</strong></td><td>Incubação curta (1–6 h), vômitos intensos, alimento manipulado e deixado fora da refrigeração.</td></tr>
+    <tr><td>Mesmo caso: infecção, toxinfecção ou intoxicação?</td><td><strong>Intoxicação</strong></td><td>A toxina já estava formada no alimento; reaquecer mata a bactéria, mas não a toxina.</td></tr>
+    <tr><td>Conserva de palmito, visão dupla, dificuldade de falar/respirar, paralisia flácida descendente.</td><td><strong>Clostridium botulinum</strong> no alimento e toxina botulínica no sangue</td><td>Conserva artesanal anaeróbia, toxina pré-formada e paralisia flácida descendente. A toxina é destruída por fervura, mas o esporo resiste.</td></tr>
+    <tr><td>Gestante/idoso/imunossuprimido com meningite e risco de aborto.</td><td><strong>Listeria monocytogenes</strong></td><td>Atravessa a placenta, invade o SNC e causa sepse/meningite; queijos moles, frios e leite cru são veículos.</td></tr>
+    <tr><td>Casamento, 100 pessoas, enterocolite 8 h após carne assada, Gram-positiva esporulada.</td><td><strong>Clostridium perfringens</strong></td><td>Bastonete Gram-positivo esporulado, anaeróbio, carne assada/resfriada lentamente; toxinfecção por toxina produzida no intestino.</td></tr>
+    <tr><td>“Infecção é resultado da ação da toxina liberada pela bactéria no tecido.”</td><td><strong>Falso</strong></td><td>Infecção é colonização/invasão e multiplicação. A ação de toxina pré-formada caracteriza intoxicação; a toxina produzida no intestino caracteriza toxinfecção.</td></tr>
+  </tbody>
+</table>
+
+<div class="callout exam"><strong>Como não cair na pegadinha</strong><p>O caso 10 é o erro mais comum: <em>C. perfringens</em> é Gram-positivo, esporulado, anaeróbio e aparece em carne assada/resfriada, com incubação de 8–16 h. <em>S. aureus</em> é Gram-positivo, mas é coco em cachos, não esporulado, e a incubação é de 1–6 h. Se a questão fala de “bastão esporulado”, já eliminou <em>S. aureus</em>.</p></div>
+
+<h3>Frases que resolvem a prova</h3>
+<ul>
+  <li>“Diarreia aquosa profusa + desidratação + água de arroz = <em>Vibrio cholerae</em>.”</li>
+  <li>“Vômito em 1–6 h + alimento manipulado = <em>S. aureus</em>.”</li>
+  <li>“Diarreia em 8–16 h + carne + Gram-positivo esporulado = <em>C. perfringens</em>.”</li>
+  <li>“Paralisia flácida descendente + conserva = <em>C. botulinum</em>.”</li>
+  <li>“Meningite/aborto + queijo mole = <em>Listeria</em>.”</li>
+  <li>“Úlcera + urease + bactéria curva = <em>H. pylori</em>.”</li>
+</ul>
+`
       }
     ]
   },

@@ -289,12 +289,13 @@ window.NUT_PLAN = [
     ]
   },
   {
-    id: "d16", track: "micro", day: "Sexta", date: "27/11", title: "Micro: véspera e prova",
-    focus: "Pela manhã, revise a matriz de patógenos e os indicadores. Prova às 14h.",
+    id: "d16", track: "micro", day: "Sexta", date: "27/11", title: "Micro: fungos e estudo dirigido",
+    focus: "A prova foi para 04/12. Use o dia para fungos, micotoxinas e as respostas do estudo dirigido.",
     tasks: [
-      { id: "d16t1", text: "Ler o Resumão de patógenos e indicadores.", view: "resumo" },
-      { id: "d16t2", text: "Revisar flashcards marcados para revisar.", view: "flashcards" },
-      { id: "d16t3", text: "Simulado curto de Micro (10 questões).", view: "questoes" }
+      { id: "d16t1", text: "Ler a aula de fungos e micotoxinas.", view: "aprender", lesson: "x5l1" },
+      { id: "d16t2", text: "Revisar as respostas do estudo dirigido de fungos.", view: "resumo" },
+      { id: "d16t3", text: "Fazer flashcards de fungos.", view: "flashcards" },
+      { id: "d16t4", text: "Responder questões de fungos.", view: "questoes" }
     ]
   },
   {
